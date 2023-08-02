@@ -1,3 +1,125 @@
+/* main color: #21212121 */
+/* main bg color: #ffffff */
+
+/*  accent color: #2196F3 */
+
+/* secondary color: #757575 */
+/* secondary bg color: #F5F4FA */
+
+/* footer & hero bgc:  #2F303A  */
+
+/* #000000 */
+
+/* #ECECEC */
+
+:root {
+  --accent-color: #2196f3;
+  --primary-color: #212121;
+  --primary-background-color: #ffffff;
+  --secondary-color: #757575;
+  --secondary-background-color: #f5f4f4;
+  --dark-theme-bg-color: #2f303a;
+  --primary-light-color: #ffffff;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+  color: var(--primary-color);
+  background-color: var(--primary-background-color);
+}
+
 a {
   text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* header   logo */
+
+.logo {
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+/*header site-nav */
+
+.site-nav a {
+  color: #212121;
+}
+
+.site-nav .active,
+.site-nav a:focus,
+.site-nav a:hover {
+  color: var(--accent-color);
+}
+
+/* header contacts */
+
+.contacts a {
+  color: var(--secondary-color);
+}
+
+.contacts a:focus,
+.contacts a:hover {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--dark-theme-bg-color);
+}
+
+.hero-title {
+  color: var(--primary-light-color);
+}
+/* button  */
+
+.button {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+
+/* sections */
+
+.text {
+  color: var(--secondary-color);
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+/* footer */
+
+.dark-theme {
+  background-color: var(--dark-theme-bg-color);
+}
+
+.dark-theme-text {
+  color: var(--primary-light-color);
+}
+
+.dark-theme-address {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
 }
