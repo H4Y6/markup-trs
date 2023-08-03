@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
   padding: 15px;
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
@@ -53,9 +53,7 @@ body {
   color: #000;
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.78px;
 }
 
@@ -103,6 +101,11 @@ body {
   background-color: var(--accent-color);
 }
 
+.button:hover,
+.button:focus {
+  background-color: 188CE8;
+}
+
 /* sections */
 
 .text {
@@ -123,7 +126,10 @@ body {
   color: var(--primary-light-color);
 }
 
+.address {
+  font-style: normal;
+}
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
 }
