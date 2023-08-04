@@ -1,0 +1,19 @@
+hero btn: 
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+
+portfolio btn:
+color: #212121;
+text-align: center; v
+font-family: Roboto; v
+font-size: 16px;  v
+font-style: normal;  v
+font-weight: 500;
+line-height: 26px; /* 162.5% */
+letter-spacing: 0.48px;
