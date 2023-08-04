@@ -53,6 +53,7 @@ body {
   color: #000;
   font-family: Raleway;
   font-size: 26px;
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
@@ -95,15 +96,25 @@ body {
 }
 /* button  */
 
-.button {
-  font-family: inherit;
-  color: var(--primary-background-color);
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875; /* 187.5% */
+  letter-spacing: 0.96px;
+
   background-color: var(--accent-color);
 }
 
-.button:hover,
-.button:focus {
-  background-color: 188CE8;
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 /* sections */
@@ -114,6 +125,47 @@ body {
 
 .team {
   background-color: var(--secondary-background-color);
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 94px 0;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 -4px 50px;
+}
+
+.button-item {
+  margin: 0 4px;
+  padding: 6px 22px;
+}
+
+.portfolio-button {
+  padding: 0;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+}
+
+.card-title {
+  color: var(--primary-color);
+  line-height: 2; /* 200% */
+  letter-spacing: 1.08px;
+}
+
+.card-text {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.875; /* 187.5% */
+  letter-spacing: 0.48px;
 }
 
 /* footer */
