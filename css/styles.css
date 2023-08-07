@@ -136,7 +136,6 @@ img {
 /* hero */
 
 .hero {
-  height: 600px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -148,12 +147,15 @@ img {
   text-transform: uppercase;
   color: var(--primary-light-color);
 }
+
 /* button  */
 
 .hero-button {
+  cursor: pointer;
+
   display: inline-block;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
 
   color: #ffffff;
   font-size: 16px;
