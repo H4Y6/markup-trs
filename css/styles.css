@@ -224,9 +224,11 @@ img {
 .card-list {
   display: flex;
   flex-flow: row wrap;
+  margin-right: calc(-1 * var(--card-gap));
 }
 
-.card-list > li:not(:nth-child(3n)) {
+.card-item {
+  flex-basis: calc(100% / 3 - var(--card-gap));
   margin-right: var(--card-gap);
 }
 
@@ -236,6 +238,7 @@ img {
 
 .card-title {
   color: var(--primary-color);
+  font-size: 18px;
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
   margin-bottom: 4px;
