@@ -145,7 +145,7 @@ img {
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin-bottom: var(--prime-gap);
   text-transform: uppercase;
   color: var(--primary-light-color);
 }
@@ -184,17 +184,18 @@ img {
 }
 
 .section-title {
-  color: #212121;
-  text-align: center;
+  margin-bottom: 50px;
   font-size: 36px;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 1.08px;
+  color: #212121;
 }
 
 .section-subtitle {
-  font-family: Roboto;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.2;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
@@ -202,6 +203,32 @@ img {
 .section-text {
   color: var(--secondary-color);
 }
+
+/* specifics section */
+
+.specifics-list {
+  display: flex;
+  margin-right: calc(-1 * var(--prime-gap));
+  text-align: left;
+}
+
+.specifics-item {
+  flex-basis: calc(100% / 4 - var(--prime-gap));
+  margin-right: var(--prime-gap);
+}
+
+/* deal section */
+
+.deal-list {
+  display: flex;
+  margin-right: calc(-1 * var(--prime-gap));
+}
+
+.deal-item {
+  margin-right: var(--prime-gap);
+  flex-basis: calc(100% / 3 - var(--prime-gap));
+}
+
 /* team section */
 
 .team {
@@ -219,9 +246,18 @@ img {
 .team-item {
   margin-right: 30px;
   flex-basis: calc(100% / 4 - var(--prime-gap));
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-description {
+  padding: 30px 15px;
 }
 
 .team-subtitle {
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -273,7 +309,7 @@ img {
   margin-right: var(--prime-gap);
   margin-bottom: var(--prime-gap);
   border: 1px solid #eeeeee;
-  background: #fff;
+  background: #ffffff;
 }
 
 .card-description {
