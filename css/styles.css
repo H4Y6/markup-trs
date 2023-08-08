@@ -16,6 +16,8 @@
   --secondary-background-color: #f5f4f4;
   --dark-theme-bg-color: #2f303a;
   --primary-light-color: #ffffff;
+
+  --card-gap: 30px;
 }
 
 body {
@@ -225,13 +227,18 @@ img {
 }
 
 .card-list > li:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-right: var(--card-gap);
+}
+
+.card-description {
+  padding: 20px 24px;
 }
 
 .card-title {
   color: var(--primary-color);
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
+  margin-bottom: 4px;
 }
 
 .card-text {
