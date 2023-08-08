@@ -178,12 +178,43 @@ img {
 
 /* sections */
 
-.text {
+.section {
+  padding: 94px 0;
+}
+
+.section-subtitle {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.section-text {
   color: var(--secondary-color);
 }
+/* team section */
 
 .team {
   background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.team-subtitle {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* Portfolio */
