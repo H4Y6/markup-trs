@@ -225,11 +225,15 @@ img {
   display: flex;
   flex-flow: row wrap;
   margin-right: calc(-1 * var(--card-gap));
+  margin-bottom: calc(-1 * var(--card-gap));
 }
 
 .card-item {
   flex-basis: calc(100% / 3 - var(--card-gap));
   margin-right: var(--card-gap);
+  margin-bottom: var(--card-gap);
+  border: 1px solid #eeeeee;
+  background: #fff;
 }
 
 .card-description {
