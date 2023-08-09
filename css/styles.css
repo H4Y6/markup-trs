@@ -74,7 +74,7 @@ img {
 
 .header-block {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo {
@@ -98,7 +98,7 @@ img {
 
 .site-nav {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-right: auto;
 }
 
