@@ -224,12 +224,11 @@ img {
 
 .deal-list {
   display: flex;
-  margin-right: calc(-1 * var(--prime-gap));
+  column-gap: var(--prime-gap);
 }
 
 .deal-item {
-  margin-right: var(--prime-gap);
-  flex-basis: calc(100% / 3 - var(--prime-gap));
+  flex-basis: calc((100% - 2 * var(--prime-gap)) / 3);
 }
 
 /* team section */
