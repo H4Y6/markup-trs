@@ -309,11 +309,13 @@ img {
 
 .card-item {
   flex-basis: calc((100% - 2 * var(--prime-gap)) / 3);
-  outline: 1px solid #eeeeee;
-  background: var(--primary-background-color);
 }
 
 .card-description {
+  outline: 1px solid #eeeeee;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background: var(--primary-background-color);
   padding: 20px 24px;
 }
 
@@ -321,7 +323,6 @@ img {
   color: var(--primary-color);
   font-size: 18px;
   line-height: 2;
-  /* 200% */
   letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
@@ -330,7 +331,6 @@ img {
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.875;
-  /* 187.5% */
   letter-spacing: 0.48px;
 }
 
