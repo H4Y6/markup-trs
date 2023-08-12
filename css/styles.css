@@ -337,6 +337,7 @@ img {
 /* footer */
 
 .dark-theme {
+  padding: 60px 0;
   background-color: var(--dark-theme-bg-color);
 }
 
