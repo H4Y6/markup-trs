@@ -105,16 +105,17 @@ img {
 
 .site-nav-list {
   display: flex;
+  column-gap: 50px;
 }
 
 .site-nav-list a {
   color: #212121;
 }
 
-.site-nav-item:not(:last-child),
+/* .site-nav-item:not(:last-child),
 .contact-item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
 .site-nav .active,
 .site-nav a:focus,
@@ -126,6 +127,8 @@ img {
 
 .contacts {
   display: flex;
+  align-items: baseline;
+  column-gap: 50px;
 }
 
 .contacts a {
@@ -211,13 +214,12 @@ img {
 
 .specifics-list {
   display: flex;
-  margin-right: calc(-1 * var(--prime-gap));
+  column-gap: var(--prime-gap);
   text-align: left;
 }
 
 .specifics-item {
-  flex-basis: calc(100% / 4 - var(--prime-gap));
-  margin-right: var(--prime-gap);
+  flex-basis: calc((100% - 3 * var(--prime-gap)) / 4);
 }
 
 /* deal section */
@@ -239,15 +241,14 @@ img {
 
 .team-list {
   display: flex;
-  margin-right: calc(-1 * var(--prime-gap));
+  column-gap: var(--prime-gap);
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
 
 .team-item {
-  margin-right: 30px;
-  flex-basis: calc(100% / 4 - var(--prime-gap));
+  flex-basis: calc((100% - 3 * var(--prime-gap)) / 4);
   border-radius: 0px 0px 4px 4px;
   background: var(--primary-background-color);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
