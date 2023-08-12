@@ -79,8 +79,7 @@ img {
 /* header   logo */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 24px 0;
   border-bottom: 1px solid #ececec;
 }
 
