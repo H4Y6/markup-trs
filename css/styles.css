@@ -154,9 +154,6 @@ img {
 
 .hero {
   text-align: center;
-  display: flex;
-  align-items: center;
-  background-color: var(--dark-theme-bg-color);
 }
 
 .hero-title {
@@ -190,6 +187,22 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right,
+      #f44336 15%,
+      #09792b 40%,
+      #00b9ff 65%,
+      #ffb800);
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-color: #e4e4e4;
 }
 
 /* sections */
