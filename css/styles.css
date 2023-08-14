@@ -235,6 +235,34 @@ img {
   flex-basis: calc((100% - 3 * var(--prime-gap)) / 4);
 }
 
+.specifics-item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+}
+
+.antenna::before {
+  background-image: url("../img/sprite/antenna.svg");
+}
+
+.clock::before {
+  background-image: url("../img/sprite/clock.svg");
+}
+
+.diagram::before {
+  background-image: url("../img/sprite/diagram.svg");
+}
+
+.astronaut::before {
+  background-image: url("../img/sprite/astronaut.svg");
+}
+
+
 /* deal section */
 
 .deal-list {
