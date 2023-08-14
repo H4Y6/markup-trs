@@ -155,15 +155,9 @@ img {
 .hero {
   display: flex;
   align-items: center;
-  margin: 0 auto;
   height: 600px;
   text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: linear-gradient(to right,
-      rgba(47, 48, 58, 0.4) 55%,
-      rgba(47, 48, 58, 0.8)), url("../img/hero.jpg");
-  background-color: #e4e4e4;
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 33%, rgba(47, 48, 58, 0.8)), url("../img/hero.jpg") no-repeat center cover, #c4c4c4;
 }
 
 .hero-title {
