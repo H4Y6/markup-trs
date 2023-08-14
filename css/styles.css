@@ -195,13 +195,10 @@ img {
   margin: 0 auto;
   width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right,
-      #f44336 15%,
-      #09792b 40%,
-      #00b9ff 65%,
-      #ffb800);
-  background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4) 55%,
+      rgba(47, 48, 58, 0.8)), url("../img/hero.jpg");
   background-color: #e4e4e4;
 }
 
