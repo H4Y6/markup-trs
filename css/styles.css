@@ -384,12 +384,21 @@ img {
   background-color: var(--dark-theme-bg-color);
 }
 
+.logo.light-text {
+  margin-bottom: 20px;
+}
+
 .light-text {
   color: var(--primary-light-color);
+  margin-bottom: 6px;
 }
 
 .address {
   font-style: normal;
+}
+
+.address li:first-child {
+  margin-bottom: 6px;
 }
 
 .address-link {
