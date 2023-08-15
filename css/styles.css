@@ -153,11 +153,9 @@ img {
 /* hero */
 
 .hero {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  height: 600px;
+  padding: 200px;
   text-align: center;
+
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -167,6 +165,10 @@ img {
 
 .hero-title {
   margin-bottom: var(--prime-gap);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-light-color);
 }
@@ -175,15 +177,14 @@ img {
 
 .hero-button {
   cursor: pointer;
-  min-width: 200px;
+  width: 200px;
   min-height: 50px;
 
   color: var(--primary-light-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
-  letter-spacing: 0.96px;
-
+  letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
 
