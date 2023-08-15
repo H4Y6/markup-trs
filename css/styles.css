@@ -36,7 +36,7 @@ body {
 
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   /* 171.429% */
   letter-spacing: 0.42px;
 
@@ -79,7 +79,7 @@ img {
 /* header   logo */
 
 .page-header {
-  padding: 24px 0;
+  padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -92,7 +92,7 @@ img {
   color: #000;
   font-family: Raleway;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.15;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
@@ -208,7 +208,7 @@ img {
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: 1.08px;
   color: #212121;
 }
@@ -217,7 +217,7 @@ img {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
@@ -287,7 +287,7 @@ img {
   display: flex;
   column-gap: var(--prime-gap);
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: 0.48px;
 }
 
