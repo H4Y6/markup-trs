@@ -237,33 +237,15 @@ img {
   flex-basis: calc((100% - 3 * var(--prime-gap)) / 4);
 }
 
-.specifics-item::before {
-  display: block;
-  margin-bottom: 30px;
-  content: "";
+.specifics-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: var(--prime-gap);
 }
-
-.antenna::before {
-  background-image: url("../img/sprite/antenna.svg");
-}
-
-.clock::before {
-  background-image: url("../img/sprite/clock.svg");
-}
-
-.diagram::before {
-  background-image: url("../img/sprite/diagram.svg");
-}
-
-.astronaut::before {
-  background-image: url("../img/sprite/astronaut.svg");
-}
-
 
 /* deal section */
 
@@ -299,13 +281,33 @@ img {
 }
 
 .team-description {
-  padding: 30px 15px;
+  padding: 30px 15px 16px;
 }
 
 .team-subtitle {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.team-social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 30px 32px;
+
+}
+
+.team-social-icons svg {
+  fill: #afb1b8;
+}
+
+
+
+.team-social-icons svg:hover,
+.team-social-icons svg:hover {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* Portfolio */
