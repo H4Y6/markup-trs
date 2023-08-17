@@ -37,7 +37,6 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.7;
-  /* 171.429% */
   letter-spacing: 0.42px;
 
   color: var(--primary-color);
@@ -138,16 +137,25 @@ img {
 .contacts {
   display: flex;
   align-items: baseline;
-  column-gap: 50px;
+  column-gap: var(--prime-gap);
 }
 
 .contacts a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--secondary-color);
 }
 
 .contacts a:focus,
 .contacts a:hover {
   color: var(--accent-color);
+}
+
+.contacts svg {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* hero */
