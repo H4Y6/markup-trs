@@ -209,7 +209,7 @@ img {
   font-size: 36px;
   line-height: 1.15;
   letter-spacing: 1.08px;
-  color: #212121;
+  color: var(--primary-color);
 }
 
 .section-subtitle {
@@ -313,6 +313,34 @@ img {
   background-color: var(--accent-color);
 }
 
+/*  clients  */
+
+.client-list {
+  display: flex;
+  column-gap: var(--prime-gap);
+}
+
+.client-item {
+  display: flex;
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 /* Portfolio */
 
