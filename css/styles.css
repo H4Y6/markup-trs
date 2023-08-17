@@ -290,26 +290,28 @@ img {
   font-weight: 500;
 }
 
-.team-soc-icons {
+.soc-icons {
   display: flex;
   column-gap: 10px;
   padding: 0 30px 30px 32px;
 
 }
 
-.team-soc-link {
+.soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+  background-color: rgba(255, 255, 255, 0.10);
+  ;
   fill: #afb1b8;
 }
 
-.team-soc-link:hover,
-.team-soc-link:hover {
+.soc-link:hover,
+.soc-link:hover {
   fill: #ffffff;
-  border-radius: 50%;
   background-color: var(--accent-color);
 }
 
@@ -418,21 +420,43 @@ img {
   background-color: var(--dark-theme-bg-color);
 }
 
-.logo.light-text {
+.address-box {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.footer-soc-box {
+  display: inline-flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--primary-light-color);
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-soc-icons {
+  padding: 0;
+}
+
+
+.margin-bottom-twenty {
   margin-bottom: 20px;
+}
+
+.margin-bottom-six {
+  margin-bottom: 6px;
 }
 
 .light-text {
   color: var(--primary-light-color);
-  margin-bottom: 6px;
 }
 
 .address {
   font-style: normal;
-}
-
-.address li:first-child {
-  margin-bottom: 6px;
 }
 
 .address-link {
