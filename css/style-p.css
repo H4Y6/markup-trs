@@ -1,0 +1,50 @@
+.section-p {
+    padding: 22px 0;
+}
+
+.box-section {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(91% /3);
+    height: 200px;
+    text-align: center;
+    font-size: 33px;
+    border-radius: 1px 77%;
+}
+
+.box+.box {
+    margin-left: 3%;
+}
+
+.thumb {
+    position: relative;
+    width: 66px;
+    height: 66px;
+    background-color: #fff;
+}
+
+.thumb>img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+
+.gray {
+    background-color: rgb(185, 178, 178);
+}
+
+.green {
+    background-color: #81e792;
+}
+
+.red {
+    background-color: rgb(224, 163, 163);
+}
