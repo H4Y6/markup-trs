@@ -1,5 +1,5 @@
 .section-p {
-    padding: 22px 0;
+    background-color: #b0b593;
 }
 
 .box-section {
@@ -10,26 +10,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc(91% /3);
-    height: 200px;
-    text-align: center;
-    font-size: 33px;
+    flex-basis: calc(90% /6);
+    height: 160px;
     border-radius: 1px 77%;
 }
 
+.box:nth-child(2n) {
+    border-radius: 77% 1px;
+}
+
 .box+.box {
-    margin-left: 3%;
+    margin-left: 2%;
 }
 
 .thumb {
     position: relative;
-    width: 66px;
-    height: 66px;
-    background-color: #fff;
+    width: 44px;
+    height: 44px;
+    border: 1px red dotted;
+    border-radius: 50%;
+    background-color: #c9c9c9;
 }
 
 .thumb>img {
     position: absolute;
+    display: block;
     width: 30px;
     height: 30px;
     top: calc(50% - 15px);
