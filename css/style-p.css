@@ -25,11 +25,15 @@
 
 .thumb {
     position: relative;
-    width: 44px;
+    width: 66px;
     height: 44px;
     border: 1px red dotted;
-    border-radius: 50%;
-    background-color: #c9c9c9;
+    border-radius: 1px 50%;
+    background-color: #c9f9c9;
+}
+
+.box:nth-child(2n)>.thumb {
+    border-radius: 50% 1px;
 }
 
 .thumb>img {
