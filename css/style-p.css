@@ -81,3 +81,9 @@
 .red {
     background-color: rgb(211, 128, 128);
 }
+
+.footer-contact-page {
+    position: sticky;
+    z-index: 2;
+    bottom: 0;
+}
