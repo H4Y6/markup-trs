@@ -1,33 +1,31 @@
 body {
-    position: relative;
+    padding-top: 80px;
 }
-
 
 .contact-page-header {
     position: fixed;
-    width: 100vw;
+    top: 0;
+    width: 100%;
+    height: 80px;
     background-color: #42e35d;
     z-index: 2;
 }
 
 .section-c {
-    position: relative;
-    padding: 77px 0;
     text-align: center;
     font-size: 24px;
     background-color: #d7d9ce;
 }
 
-.section-c h2 {
+.section-c-title {
     position: sticky;
     z-index: 1;
-    top: 77px;
+    top: 80px;
     background-image: repeating-linear-gradient(-30deg,
             #606dbc,
             #606dbc 10px,
             #465298 10px,
             #465298 20px);
-
 }
 
 
@@ -37,7 +35,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: calc(3 * var(--prime-gap));
-    transform: translate(0 50%);
 }
 
 .box {
@@ -70,11 +67,10 @@ body {
 .thumb>img {
     position: absolute;
     display: block;
-    top: 50%;
-    left: 50%;
     width: 100px;
-    height: auto;
-    transform: translate(-50%, -50%);
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
 }
 
 

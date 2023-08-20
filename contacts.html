@@ -42,7 +42,7 @@
 
     <main>
         <section class="section-c">
-            <h2>Positioning</h2>
+            <h2 class="section-c-title">Positioning</h2>
             <div class="container box-section">
                 <div class="box violet">
                     <div class="thumb"><img src="./img/img-p/twitter.svg" alt=""></div>
@@ -66,7 +66,7 @@
         </section>
 
         <section class="section-c">
-            <h2>SVG</h2>
+            <h2 class="section-c-title">SVG</h2>
             <div class="container">
                 <svg width="" height="1100">
                     <polygon points="20,500 200,500 100,655" fill="orange" stroke="red" stroke-width="2" />
@@ -122,6 +122,9 @@
         </div>
     </footer>
 
+    <script>const { height: pageHeaderHeight } = document.querySelector(".contact-page-header").getBoundingClientRect();
+        document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
 </body>
 
 </html>
