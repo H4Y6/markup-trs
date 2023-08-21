@@ -126,7 +126,24 @@ img {
   margin-right: 50px;
 } */
 
-.site-nav .active,
+.site-nav-item .active {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.site-nav-item .active::after {
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+
 .site-nav a:focus,
 .site-nav a:hover {
   color: var(--accent-color);
