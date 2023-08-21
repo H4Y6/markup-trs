@@ -156,6 +156,7 @@
             openModalBtn: document.querySelector("[data-open-modal]"),
             closeModalBtn: document.querySelector("[data-close-modal]"),
             backdrop: document.querySelector("[data-backdrop]"),
+            sectionTitles: document.body.querySelectorAll(".section-c-title")
         };
 
         refs.openModalBtn.addEventListener("click", toggleModal);
@@ -173,9 +174,9 @@
         const { height: pageHeaderHeight } = document.querySelector(".contact-page-header").getBoundingClientRect();
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
-        const sectionTitles = document.body.querySelectorAll(".section-c-title")
-        sectionTitles[0].style.top = `${pageHeaderHeight}px`;
-        sectionTitles[1].style.top = `${pageHeaderHeight}px`;
+        ref.sectionTitles[0].style.top = `${pageHeaderHeight}px`;
+        ref.sectionTitles[1].style.top = `${pageHeaderHeight}px`;
+        ref.sectionTitles[2].style.top = `${pageHeaderHeight}px`;
     </script>
 </body>
 
