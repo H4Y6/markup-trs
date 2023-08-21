@@ -83,25 +83,29 @@
                 </svg>
             </div>
         </section>
-        </div>
+
 
         <section class="section-c">
             <h2 class="section-c-title">Modal window</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi eius officia pariatur cum
+                deleniti sunt consectetur ratione? Voluptatem quibusdam cumque quo corrupti minima et amet rem
+                exercitationem ipsum at!</span><span>Ea distinctio nulla error debitis totam veniam, hic perferendis
+                    ducimus exercitationem doloribus tempore quis cumque modi illo dolorum. Ipsam optio labore atque sit
+                    dolorem dolores, inventore sint aspernatur ut totam.</span><span>Nobis cumque, voluptates, beatae
+                    eligendi at, mollitia quisquam ratione saepe omnis facilis ut a laboriosam repellendus corporis ad
+                    reprehenderit quae recusandae exercitationem nulla delectus! Non optio nesciunt error pariatur
+                    quaerat.</span><span>Incidunt maxime, nemo delectus fuga ullam veritatis! Et laborum veritatis iusto
+                    reiciendis eligendi quis doloribus rerum voluptatum veniam neque earum odit excepturi nemo, sit
+                    molestiae aut mollitia vel. Quos, accusantium.</span><span>Doloribus facilis delectus accusantium
+                    enim nisi aut perferendis, exercitationem officia dolor pariatur cupiditate veritatis esse amet at
+                    sequi, unde quasi cumque. Fuga tempore accusantium illum repellat voluptate aut beatae quod.
+            </p>
+
+            <button class="btn open-btn" aria-label="press this button to open a modal" type="button"
+                data-open-modal>Open
+                modal</button>
+
             <div class="container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium at sunt placeat nulla
-                    tempora, enim est harum id facilis sed eos ut corrupti minus in, laborum accusantium voluptatibus
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium at sunt placeat nulla
-                    tempora, enim est harum id facilis sed eos ut corrupti minus in, laborum accusantium voluptatibus
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium at sunt placeat nulla
-                    tempora, enim est harum id facilis sed eos ut corrupti minus in, laborum accusantium voluptatibus
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium at sunt placeat nulla
-                    tempora, enim est harum id facilis sed eos ut corrupti minus in, laborum accusantium voluptatibus
-                </p>
-
-                <button class="btn open-btn" aria-label="press this button to open a modal" type="button"
-                    data-open-modal>Open
-                    modal</button>
-
                 <div class="backdrop is-hidden" data-backdrop>
                     <div class="modal">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quasi unde exercitationem
@@ -113,6 +117,9 @@
                 </div>
             </div>
         </section>
+        </div>
+
+
     </main>
 
     <footer class="dark-theme footer-contact-page">
@@ -174,9 +181,12 @@
         const { height: pageHeaderHeight } = document.querySelector(".contact-page-header").getBoundingClientRect();
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
-        ref.sectionTitles[0].style.top = `${pageHeaderHeight}px`;
-        ref.sectionTitles[1].style.top = `${pageHeaderHeight}px`;
-        ref.sectionTitles[2].style.top = `${pageHeaderHeight}px`;
+        const { sectionTitles } = refs
+        const titleTop = `${pageHeaderHeight}px`;
+
+        sectionTitles[0].style.top = titleTop;
+        sectionTitles[1].style.top = titleTop;
+        sectionTitles[2].style.top = titleTop;
     </script>
 </body>
 
