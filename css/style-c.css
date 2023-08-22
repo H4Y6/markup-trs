@@ -1,5 +1,5 @@
 body {
-    padding-top: 80px;
+    position: relative;
 }
 
 .contact-page-header {
@@ -22,6 +22,7 @@ body {
     position: sticky;
     z-index: 1;
     top: 80px;
+    margin-bottom: var(--prime-gap);
     background-image: repeating-linear-gradient(-30deg,
             #606dbc,
             #606dbc 10px,
@@ -180,13 +181,4 @@ body {
 .submenu a {
     display: block;
     padding: 10px;
-}
-
-
-/* Footer */
-
-.footer-contact-page {
-    position: sticky;
-    z-index: 1;
-    bottom: 0;
 }
