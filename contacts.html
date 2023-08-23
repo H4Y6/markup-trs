@@ -215,12 +215,10 @@
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
         const sectionTitles = document.body.querySelectorAll(".section-c-title")
-        const titleTop = `${pageHeaderHeight}px`;
 
-        sectionTitles[0].style.top = titleTop;
-        sectionTitles[1].style.top = titleTop;
-        sectionTitles[2].style.top = titleTop;
-        sectionTitles[3].style.top = titleTop;
+        const titleTop = `${pageHeaderHeight}px`;
+        sectionTitles.forEach(t => t.style.top = titleTop)
+
     </script>
 </body>
 
