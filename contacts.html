@@ -145,9 +145,11 @@
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi eius officia pariatur cum
                     deleniti sunt consectetur ratione? Voluptatem quibusdam cumque quo corrupti minima et amet rem
-                    exercitationem ipsum at! Ea distinctio nulla error debitis totam veniam, hic perferendis
+                    exercitationem ipsum. Ea distinctio nulla error debitis totam veniam, hic perferendis
                     ducimus exercitationem doloribus tempore quis cumque modi illo dolorum. Ipsam optio labore atque sit
-                    dolorem dolores, inventore sint aspernatur ut totam. Nobis cumque, voluptates, beatae
+                    dolorem dolores, inventore sint aspernatur ut totam. Nobis cumque, voluptates, beatae? Voluptatem
+                    quibusdam cumque quo corrupti minima et amet rem
+                    exercitationem ipsum at!
 
             </div>
         </section>
@@ -195,7 +197,6 @@
             openModalBtn: document.querySelector("[data-open-modal]"),
             closeModalBtn: document.querySelector("[data-close-modal]"),
             backdrop: document.querySelector("[data-backdrop]"),
-            sectionTitles: document.body.querySelectorAll(".section-c-title")
         };
 
         refs.openModalBtn.addEventListener("click", toggleModal);
@@ -213,7 +214,7 @@
         const { height: pageHeaderHeight } = document.querySelector(".contact-page-header").getBoundingClientRect();
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
-        const { sectionTitles } = refs
+        const sectionTitles = document.body.querySelectorAll(".section-c-title")
         const titleTop = `${pageHeaderHeight}px`;
 
         sectionTitles[0].style.top = titleTop;
