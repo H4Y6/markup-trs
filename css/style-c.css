@@ -100,8 +100,8 @@ body {
     height: 100%;
     background-color: rgba(206, 228, 144, .9);
 
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-        transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 500ms var(--timing-function),
+        transform 300ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -132,7 +132,7 @@ body {
     margin: 30px auto;
     background-color: #42e35d;
     color: #fefdfe;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--timing-function);
 }
 
 .btn:hover,
@@ -160,7 +160,7 @@ body {
     padding: 10px;
     background-color: #42e35d;
     color: #e8e8ef;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--timing-function);
 }
 
 .menu-link:hover {
@@ -174,13 +174,26 @@ body {
     width: 100%;
     min-height: 150px;
     padding: 10px;
-    opacity: 0;
+    transform: scaleX(0);
     background-color: #ccc;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms var(--timing-function);
 }
 
+/* 
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    opacity: 0;
+    background-color: #ccc;
+    transition: opacity 250ms var(--timing-function);
+} */
+
 .menu-item:hover .submenu {
-    opacity: 1;
+    transform: scaleX(1);
 }
 
 .submenu a {
@@ -191,7 +204,7 @@ body {
 .btn-c {
     position: relative;
     overflow: hidden;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--timing-function);
 }
 
 
@@ -204,8 +217,8 @@ body {
     background-color: #b9b909;
     background-size: contain;
     background-position: 0 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms var(--timing-function),
+        transform 250ms var(--timing-function);
 }
 
 .btn-c::before {
