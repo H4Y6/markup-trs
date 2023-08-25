@@ -107,7 +107,7 @@ body {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    transform: scale3D(0, -1, .01) rotate(-1.3turn);
+    transform: scale3D(0, -1, .01) rotate(-.3turn);
 }
 
 .modal {
@@ -199,9 +199,10 @@ body {
 .btn-c::after {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 20px;
     height: 20px;
-    background-color: #dbdb18;
+    /* background-color: #dbdb18; */
     background-size: contain;
     background-position: 0 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
