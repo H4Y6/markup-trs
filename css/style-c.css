@@ -204,6 +204,9 @@ body {
     height: 20px;
     margin-right: 15px;
     background-color: #dbdb18;
+    background-image: url(../img/img-c/airplane.svg);
+    background-size: contain;
+    background-position: 0 0;
     transition: opacity 250ms cubic-bezier(1, 0, 0, 1),
         transform 250ms cubic-bezier(1, 0, 0, 1);
 }
@@ -227,7 +230,10 @@ body {
     opacity: 0;
     width: 20px;
     height: 20px;
-    background-color: #9f0909;
+    background-color: #81e038;
+    background-image: url(../img/img-c/twitter.svg);
+    background-size: contain;
+    background-position: 0 0;
     transition: opacity 250ms cubic-bezier(1, 0, 0, 1),
         transform 250ms cubic-bezier(1, 0, 0, 1);
 }
