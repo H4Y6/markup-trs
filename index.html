@@ -45,10 +45,20 @@
         Эффективные решения <br>
         для вашего бизнеса
       </h1>
-      <button class="hero-button" type="button" aria-label="order service">
+      <button class="hero-button" type="button" aria-label="order service" data-open-modal>
         Заказать услугу
       </button>
     </section>
+
+    <div class="overlay is-hidden" data-backdrop>
+      <div class="modal">
+        <button class="close-button" data-close-modal>
+          <svg class="icon-close">
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <section class="section">
       <div class="container">
@@ -295,6 +305,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
