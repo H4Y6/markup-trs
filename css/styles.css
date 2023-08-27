@@ -221,11 +221,13 @@ img {
   justify-content: center;
   border: 1px rgba(0, 0, 0, 0.10) solid;
   border-radius: 50%;
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function), transform 250ms var(--timing-function);
 }
 
-.close-button:hover {
+.close-button:hover,
+.close-button:focus {
   border-color: var(--accent-color);
+  transform: scale(1.2) rotate(.75turn);
 }
 
 .close-button:hover .icon-close {
