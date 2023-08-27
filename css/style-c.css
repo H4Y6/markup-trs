@@ -155,12 +155,6 @@ body {
     border-radius: 50%;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    background-color: var(--accent-color);
-    transform: scale(2) rotate(.75turn);
-}
-
 
 /* Menu */
 
