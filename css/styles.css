@@ -171,6 +171,75 @@ img {
   fill: currentColor;
 }
 
+/* overlay */
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+  background-color: rgba(0, 0, 0, 0.20);
+  opacity: 1;
+}
+
+.overlay.is-hidden {
+  opacity: 0;
+  transform: scale(1, .9);
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 14px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: transform 250ms var(--timing-function);
+}
+
+.overlay.is-hidden .modal {
+  transform: scale(-.14);
+}
+
+.close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px rgba(0, 0, 0, 0.10) solid;
+  border-radius: 50%;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.close-button:hover {
+  border-color: var(--accent-color);
+}
+
+.close-button:hover .icon-close {
+  fill: var(--accent-color);
+  ;
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+  transition: fill 250ms var(--timing-function);
+}
+
 /* hero */
 
 .hero {
@@ -209,6 +278,7 @@ img {
   border: none;
   border-radius: 4px;
   color: var(--primary-light-color);
+  transition: background-color 250ms var(--timing-function);
   background-color: var(--accent-color);
 }
 
