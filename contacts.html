@@ -159,6 +159,112 @@
             </div>
         </section>
 
+        <!-- forms -->
+
+        <section class="section-c">
+            <h2 class="section-c-title"> Form </h2>
+            <div class="container">
+
+                <form class="form js-speaker-form">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="user-name" id="name" placeholder="John Davidson" autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">tel</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+360 95 9595955">
+                    </div>
+                    <div class="form-field">
+                        <label for="mail">email</label>
+                        <input type="email" name="mail" id="mail" autofocus placeholder="abc@ythol.lt">
+                    </div>
+
+                    <!-- <fieldset>
+                <input type="checkbox" name="topic" value="html" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="topic" value="css" id="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="topic" value="js" id="css">
+                <label for="css">JS</label>
+            </fieldset> 
+            
+            instead of fieldset use div with role attribute        -->
+
+
+                    <div class="group" role="group"> <!-- for semantic use "role=""-->
+
+                        <h2 class="group-title">The topics of the report</h2>
+
+                        <ul class="topic-options">
+                            <li>
+                                <input type="checkbox" name="topic" value="html" id="html" checked>
+                                <label for="html">HTML</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="topic" value="css" id="css" checked>
+                                <label for="css">CSS</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="topic" value="js" id="css">
+                                <label for="css">JS</label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="group" role="group"> <!-- for semantic use "role=""-->
+
+                        <h2 class="group-title">The experience level</h2>
+
+                        <ul class="experience-levels">
+                            <li>
+                                <input type="radio" name="experience" value="junior" id="junior" checked>
+                                <label for="junior">Junior</label></label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="experience" value="middle" id="middle">
+                                <label for="middle">Middle</label></label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="experience" value="senior" id="senior">
+                                <label for="senior">Senior</label></label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-field date">
+                        <label for="date">The date of the events</label>
+                        <input type="datetime-local" name="date" id="date" min="2023-09-22T11:00"
+                            max="2023-09-29T21:00">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="pdf"> Load the pdf file </label>
+                        <input type="file" name="avatar" id="pdf">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="comment">Leave your comment</label>
+                        <textarea class="comment" id="comment" cols="30" rows="10"
+                            placeholder="The report detailes"></textarea>
+                    </div>
+
+                    <div class="form-field-policy">
+                        <input type="checkbox" name="policy" id="policy">
+                        <label for="policy">I agree with terms</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer class="dark-theme footer-contact-page">
@@ -198,6 +304,16 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script>
+        (() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                e.preventDefault();
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+            });
+        })();
+    </script>
 </body>
 
 </html>
