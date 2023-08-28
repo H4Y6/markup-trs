@@ -252,3 +252,98 @@ body {
     opacity: 1;
     transform: translateY(-50%);
 }
+
+/* form */
+
+.form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.form-field {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 5px 12px;
+    border: 1px #545154 solid;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.form-field label {
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.form-field>input::placeholder {
+    color: #545154;
+    text-align: left;
+}
+
+.group {
+    margin-bottom: 25px;
+}
+
+.group-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.topic-options,
+.experience-levels {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.topic-options li,
+.experience-levels li {
+    align-items: center;
+}
+
+/* .topic-options input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+} */
+
+.topic-options label,
+.experience-levels label {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.form .date {
+    border: 4px #1b0764 solid;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 18px;
+    color: #fb505c;
+    background-color: #b6b1b1;
+}
+
+.form .date input {
+    color: #fb505c;
+}
+
+.form-field-policy {
+    outline: 1px #42e35d solid;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.form-field-policy label {
+    margin-left: 11px;
+}
+
+.comment {
+    padding: 7px;
+}
+
+textarea {
+    resize: none;
+}
