@@ -162,17 +162,17 @@
         <!-- forms -->
 
         <section class="section-c">
-            <h2 class="section-c-title"> Form </h2>
+            <h2 class="section-c-title"> Forms </h2>
             <div class="container">
 
                 <form class="form js-speaker-form">
                     <div class="form-field">
-                        <label for="name">Name</label>
+                        <label for="name">name</label>
                         <input type="text" name="user-name" id="name" placeholder="John Davidson" autocomplete="off">
                     </div>
                     <div class="form-field">
                         <label for="tel">tel</label>
-                        <input type="tel" name="tel" id="tel" placeholder="+360 95 9595955">
+                        <input type="tel" name="tel" id="tel" placeholder="+1 95 9595955">
                     </div>
                     <div class="form-field">
                         <label for="mail">email</label>
@@ -251,8 +251,7 @@
 
                     <div class="form-field">
                         <label for="comment">Leave your comment</label>
-                        <textarea class="comment" id="comment" cols="30" rows="10"
-                            placeholder="The report detailes"></textarea>
+                        <textarea class="comment" id="comment" placeholder="The report detailes"></textarea>
                     </div>
 
                     <div class="form-field-policy">
@@ -262,10 +261,80 @@
 
                     <button type="submit">Submit</button>
                 </form>
+
+                <!-- contact-form -->
+
+                <form class="contact-form js-contact-form">
+
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" class="contact-form-input" required
+                        placeholder="Arthur Bell">
+                    <label for="tel">tel</label>
+                    <input type="tel" name="tel" id="tel" class="contact-form-input" pattern="^\+\d+ \d{2} \d{3} \d{4}$"
+                        title="+380 99 888 0099" required placeholder="+1 92 456 6734">
+                    <label for="mail">email</label>
+                    <input type="email" name="email" id="mail" class="contact-form-input" placeholder="arthur@bell.fg">
+                    <label for="avatar">avatar</label>
+                    <input type="file" name="avatar" id="avatar" class="contact-form-input" placeholder="">
+
+
+                    <fieldset class="contact-fieldset">
+                        <legend>Position</legend>
+                        <div class="contact-form-field">
+                            <input type="radio" name="position" id="student" value="student">
+                            <label for="student">student</label>
+                        </div>
+
+                        <div class="contact-form-field">
+                            <input type="radio" name="position" id="engineeer" value="engineer">
+                            <label for="engineer">engineer</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="contact-fieldset">
+                        <legend>Hobby</legend>
+                        <div class="contact-form-field">
+                            <input type="checkbox" name="hobby" id="books" value="books">
+                            <label for="books">books</label>
+                        </div>
+
+                        <div class="contact-form-field">
+                            <input type="checkbox" name="hobby" id="games" value="games" checked>
+                            <label for="games">games</label>
+                        </div>
+
+                        <div class="contact-form-field">
+                            <input type="checkbox" name="hobby" id="theater" value="theater">
+                            <label for="theater">theater</label>
+                        </div>
+                    </fieldset>
+
+
+                    <div class="contact-form-field">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="paris">Paris</option>
+                            <option value="london" selected>London</option>
+                            <option value="berlin">Berlin</option>
+                            <option value="dnipro">Dnipro</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-form-field policy">
+                        <label for="policy">Comment</label>
+                        <textarea class="contact-form-input" name="policy" id="policy" rows="10"
+                            placeholder="Type your text"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+
             </div>
         </section>
 
     </main>
+
+    <!-- Footer -->
 
     <footer class="dark-theme footer-contact-page">
         <div class="container">
@@ -306,12 +375,14 @@
     <script src="./js/modal.js"></script>
     <script>
         (() => {
-            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                e.preventDefault();
-                new FormData(e.currentTarget).forEach((value, name) =>
-                    console.log(`${name}: ${value}`),
-                );
-            });
+            document.querySelector('.js-contact-form')
+                // document.querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+                });
         })();
     </script>
 </body>
