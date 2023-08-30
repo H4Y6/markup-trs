@@ -167,16 +167,25 @@
 
                 <form class="form js-speaker-form">
                     <div class="form-field">
+                        <input type="text" name="user-name" id="name" placeholder=" " autocomplete="off">
                         <label for="name">name</label>
-                        <input type="text" name="user-name" id="name" placeholder="John Davidson" autocomplete="off">
+                        <span class="icon-span"><svg class="icon">
+                                <use href="./img/sprite.svg#icon-person"></use>
+                            </svg> </span>
                     </div>
                     <div class="form-field">
+                        <input type="tel" name="tel" id="tel" placeholder=" ">
                         <label for="tel">tel</label>
-                        <input type="tel" name="tel" id="tel" placeholder="+1 95 9595955">
+                        <span class="icon-span"><svg class="icon">
+                                <use href="./img/sprite.svg#icon-phone"></use>
+                            </svg> </span>
                     </div>
                     <div class="form-field">
+                        <input type="email" name="mail" id="mail" placeholder=" ">
                         <label for="mail">email</label>
-                        <input type="email" name="mail" id="mail" autofocus placeholder="abc@ythol.lt">
+                        <span class="icon-span"><svg class="icon">
+                                <use href="./img/sprite.svg#icon-email"></use>
+                            </svg> </span>
                     </div>
 
                     <!-- <fieldset>
@@ -238,15 +247,15 @@
                         </ul>
                     </div>
 
-                    <div class="form-field date">
+                    <div class="form-field-date">
                         <label for="date">The date of the events</label>
                         <input type="datetime-local" name="date" id="date" min="2023-09-22T11:00"
                             max="2023-09-29T21:00">
                     </div>
 
-                    <div class="form-field">
+                    <div class="form-field-file">
                         <label for="pdf"> Load the pdf file </label>
-                        <input type="file" name="avatar" id="pdf">
+                        <input type="file" name="pdf" id="pdf">
                     </div>
 
                     <div class="form-field">
@@ -270,8 +279,8 @@
                     <input type="text" name="name" id="name" class="contact-form-input" required
                         placeholder="Arthur Bell">
                     <label for="tel">tel</label>
-                    <input type="tel" name="tel" id="tel" class="contact-form-input" pattern="^\+\d+ \d{2} \d{3} \d{4}$"
-                        title="+380 99 888 0099" required placeholder="+1 92 456 6734">
+                    <input type="tel" name="tel" id="tel" class="contact-form-input" title="+380 99 888 0099" required
+                        placeholder="+1 92 456 6734">
                     <label for="mail">email</label>
                     <input type="email" name="email" id="mail" class="contact-form-input" placeholder="arthur@bell.fg">
                     <label for="avatar">avatar</label>
@@ -375,8 +384,8 @@
     <script src="./js/modal.js"></script>
     <script>
         (() => {
-            document.querySelector('.js-contact-form')
-                // document.querySelector('.js-speaker-form')
+            document.querySelector('.js-speaker-form')
+                // document.querySelector('.js-contact-form')
                 .addEventListener('submit', e => {
                     e.preventDefault();
                     new FormData(e.currentTarget).forEach((value, name) =>
