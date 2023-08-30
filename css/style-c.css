@@ -258,29 +258,65 @@ body {
 .form {
     width: 700px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 25px;
     margin-bottom: 55px;
     background-color: #f3efef;
 }
 
 .form-field {
+    position: relative;
     margin-bottom: 25px;
     display: flex;
-    flex-direction: column;
 }
 
-.form-field input {
+.form-field>input {
     margin: 0;
-    padding: 5px 12px;
+    width: 100%;
+    padding: 12px 12px 12px 44px;
     border: 1px #545154 solid;
     border-radius: 4px;
     font-size: 12px;
 }
 
-.form-field label {
-    margin-bottom: 7px;
+.form-field>input:focus+label,
+.form-field>input:not(:placeholder-shown)+label {
+    color: var(--accent-color);
+    transform: translate(-40px, -45px);
+}
+
+.form-field>label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    transition: transform 250ms var(--timing-function), color 250ms var(--timing-function);
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
+}
+
+.icon-span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    outline: 1px #1f1010 solid;
+    fill: currentColor;
+    transition: fill 250ms var(--timing-function);
+
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.form-field>input:focus~span {
+    fill: var(--accent-color);
 }
 
 .form-field>textarea::placeholder,
@@ -297,6 +333,7 @@ body {
 .group-title {
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .topic-options,
@@ -318,22 +355,37 @@ body {
 
 .topic-options label,
 .experience-levels label {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 10px;
 }
 
-.form .date {
+.form-field-date,
+.form-field-file {
+    display: flex;
+    flex-direction: column;
     border: 4px #1b0764 solid;
     border-radius: 5px;
     padding: 7px;
-    font-size: 18px;
-    color: #fb505c;
+    font-size: 14px;
     background-color: #b6b1b1;
+    margin-bottom: 25px;
 }
 
-.form .date input {
-    color: #fb505c;
+.form-field-date label,
+.form-field-file label {
+    text-align: left;
+    width: 55%;
+    padding: 0 15px;
+    margin-bottom: 11px;
+    color: #554b4c;
 }
+
+.form-field-date input {
+    width: 55%;
+    color: #554b4c;
+}
+
+
 
 .form-field-policy {
     margin-bottom: 25px;
@@ -342,10 +394,12 @@ body {
 
 .form-field-policy label {
     margin-left: 11px;
+    font-size: 14px;
 }
 
 .comment {
     min-height: 120px;
+    min-width: 500px;
     padding: 7px;
     resize: none;
 }
@@ -371,7 +425,8 @@ body {
 .contact-form-input {
     width: 100%;
     height: 35px;
-    border: 1px #777;
+    font-size: 16px;
+    border: 1px #777 solid;
     border-radius: 5px;
     margin-bottom: 35px;
 }
@@ -385,6 +440,16 @@ body {
     margin-bottom: 33px;
     border: none;
     background-color: #fff;
+}
+
+.contact-fieldset>legend {
+    font-size: 16px;
+}
+
+
+.contact-fieldset option {
+    font-size: 16px;
+    line-height: 2;
 }
 
 .contact-form-field {
