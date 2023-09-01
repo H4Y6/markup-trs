@@ -527,10 +527,16 @@ body {
     display: block;
     width: 22px;
     height: 22px;
-    background-color: #42e35d;
+    border-radius: 50%;
+    background-color: #dbe7dd;
+}
+
+.form-icon>svg {
+    width: 18px;
+    height: 18px;
 }
 
 .form-field-set-input:hover~.form-icon,
 .form-field-set-input:focus~.form-icon {
-    background-color: #a25959;
+    fill: var(--accent-color);
 }
