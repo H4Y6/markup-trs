@@ -506,7 +506,7 @@ body {
 .form-field-set-input {
     width: 100%;
     margin: 0;
-    padding: 11px 41px;
+    padding: 11px 11px 11px 41px;
     border-radius: 4px;
     border: 1px #e9f0e9 solid;
 }
@@ -549,4 +549,17 @@ body {
     border: none;
     border-radius: 5px;
     background-color: #42e35d;
+}
+
+
+/* check-box-form */
+
+.check-box-form {
+    display: flex;
+}
+
+.check-box:checked {
+    appearance: none;
+    width: 50px;
+    height: 50px;
 }
