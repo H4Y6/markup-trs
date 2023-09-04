@@ -3,7 +3,7 @@
 .checkbox-form {
     width: 300px;
     margin: 45px 0;
-    padding: 10px;
+    padding: 20px;
     background-color: #ebd3a2;
 }
 
@@ -49,16 +49,9 @@
     appearance: none;
     width: 16px;
     height: 15px;
+    transition: opacity 250ms var(--timing-function);
 }
 
 .checkbox:checked~.checkbox-icon>svg {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     opacity: 1;
-    display: block;
-    appearance: none;
-    width: 16px;
-    height: 15px;
 }
