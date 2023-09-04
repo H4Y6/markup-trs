@@ -75,7 +75,7 @@
 
 .form-a-input {
     width: 100%;
-    padding: 5px;
+    padding: 5px 5px 5px 43px;
 }
 
 .form-a-input:focus,
@@ -90,7 +90,6 @@
     transform: translateY(-50%);
     transition: transform 260ms var(--timing-function);
     display: block;
-    padding: 5px;
 }
 
 .form-a-input:focus+.form-a-label,
@@ -102,4 +101,24 @@
 .form-a-input:not(:placeholder-shown)+.form-a-label,
 .form-a-input:not(:placeholder-shown)+.form-a-label {
     transform: translateY(-44px);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    display: inline-block;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
+    fill: var(--primary-color)
+}
+
+.icon>svg {
+    width: 32px;
+    height: 32px;
+}
+
+.form-a-input:focus~.icon,
+.form-a-input:hover~.icon {
+    fill: var(--accent-color);
 }
