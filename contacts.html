@@ -46,22 +46,36 @@
             <h2 class="section-c-title">Positioning</h2>
             <div class="container box-section">
                 <div class="box violet">
-                    <div class="thumb"><img src="./img/img-c/twitter.svg" alt=""></div>
+
+                    <div class="thumb"><svg class="thumb-icon ">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg></div>
+
                 </div>
                 <div class="box violet">
-                    <div class="thumb"><img src="./img/img-c/twitter.svg" alt=""></div>
+                    <div class="thumb"><svg class="thumb-icon ">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg></div>
                 </div>
                 <div class="box green">
-                    <div class="thumb"><img src="./img/img-c/twitter.svg" alt=""></div>
+                    <div class="thumb"><svg class="thumb-icon ">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg></div>
                 </div>
                 <div class="box green">
-                    <div class="thumb"><img src="./img/img-c/twitter.svg" alt=""></div>
+                    <div class="thumb"><svg class="thumb-icon ">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg></div>
                 </div>
                 <div class="box red">
-                    <div class="thumb"><img src="./img/img-c/twitter.svg" alt=""></div>
+                    <div class="thumb"><svg class="thumb-icon ">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg></div>
                 </div>
                 <div class="box red">
-                    <div class="thumb"><img src="./img/img-c/twitter.svg" alt=""></div>
+                    <div class="thumb"><svg class="thumb-icon ">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg></div>
                 </div>
             </div>
         </section>
@@ -109,7 +123,7 @@
                 <div class="backdrop is-hidden" data-backdrop>
                     <div class="modal-window">
 
-                        <button class="close-button button" type="button" data-close-modal>
+                        <button class="close-button button" type="button" title="close" data-close-modal>
                             <svg class="icon-close">
                                 <use href="./img/sprite.svg#icon-close"></use>
                             </svg>
@@ -166,25 +180,26 @@
             <h2 class="section-c-title"> Forms </h2>
             <div class="container">
 
-                <form class="form js-speaker-form">
+                <form class="form js-form">
                     <div class="form-field">
-                        <input type="text" name="user-name" id="name" area-label="Enter your name" placeholder=" "
+                        <input type="text" name="user-name" id="user-name" area-label="Enter your name" placeholder=" "
                             autocomplete="off">
-                        <label for="name">name</label>
+                        <label for="user-name">name</label>
                         <span class="icon-span"><svg class="icon">
                                 <use href="./img/sprite.svg#icon-person"></use>
                             </svg> </span>
                     </div>
                     <div class="form-field">
-                        <input type="tel" name="tel" id="tel" area-label="Enter your phone number" placeholder=" ">
-                        <label for="tel">tel</label>
+                        <input type="tel" name="tel" id="tlf" autocomplete="off" area-label="Enter your phone number"
+                            placeholder=" ">
+                        <label for="tlf">tel</label>
                         <span class="icon-span"><svg class="icon">
                                 <use href="./img/sprite.svg#icon-phone"></use>
                             </svg> </span>
                     </div>
                     <div class="form-field">
-                        <input type="email" name="mail" id="mail" area-label="Enter your email" placeholder=" ">
-                        <label for="mail">email</label>
+                        <input type="email" name="mail" id="your-mail" area-label="Enter your email" placeholder=" ">
+                        <label for="your-mail">email</label>
                         <span class="icon-span"><svg class="icon">
                                 <use href="./img/sprite.svg#icon-email"></use>
                             </svg> </span>
@@ -220,8 +235,8 @@
                             </li>
 
                             <li>
-                                <input type="checkbox" name="topic" value="js" id="css">
-                                <label for="css">JS</label>
+                                <input type="checkbox" name="topic" value="js" id="js">
+                                <label for="js">JS</label>
                             </li>
                         </ul>
                     </div>
@@ -266,25 +281,26 @@
                     </div>
 
                     <div class="form-field-policy">
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">I agree with terms</label>
+                        <input type="checkbox" name="policy" id="policy-text">
+                        <label for="policy-text">I agree with terms</label>
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button class="form-button" type="submit">Submit</button>
                 </form>
 
                 <!-- contact-form -->
 
-                <form class="contact-form js-contact-form">
+                <form class="contact-form js-form-a">
 
                     <label for="name">name</label>
-                    <input type="text" name="name" id="name" class="contact-form-input" required
+                    <input type="text" name="name" id="name" class="contact-form-input" required autocomplete="off"
                         placeholder="Arthur Bell">
                     <label for="tel">tel</label>
                     <input type="tel" name="tel" id="tel" class="contact-form-input" title="+380 99 888 0099" required
-                        placeholder="+1 92 456 6734">
+                        autocomplete="off" placeholder="+1 92 456 6734">
                     <label for="mail">email</label>
-                    <input type="email" name="email" id="mail" class="contact-form-input" placeholder="arthur@bell.fg">
+                    <input type="email" name="email" id="mail" class="contact-form-input" autocomplete="off"
+                        placeholder="arthur@bell.fg">
                     <label for="avatar">avatar</label>
                     <input type="file" name="avatar" id="avatar" class="contact-form-input" placeholder="">
 
@@ -297,7 +313,7 @@
                         </div>
 
                         <div class="contact-form-field">
-                            <input type="radio" name="position" id="engineeer" value="engineer">
+                            <input type="radio" name="position" id="engineer" title="engineer" value="engineer">
                             <label for="engineer">engineer</label>
                         </div>
                     </fieldset>
@@ -337,12 +353,13 @@
                             placeholder="Type your text"></textarea>
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button class="form-button" type="submit">Submit</button>
                 </form>
 
-                <form enctype="text/plain" class="form-tray" autocomplete="off">
+                <form enctype="text/plain" class="form-tray js-form-b" autocomplete="off">
                     <div class="form-field-set">
-                        <input class="form-field-set-input" type="text" name="name" placeholder=" " id="set-name">
+                        <input class="form-field-set-input" type="text" name="name" placeholder=" " autocomplete="off"
+                            id="set-name">
                         <label class="form-field-set-label" for="set-name">name</label>
                         <span class="form-icon"><svg>
                                 <use href="./img/sprite.svg#icon-person"></use>
@@ -350,19 +367,20 @@
                     </div>
 
                     <div class="form-field-set">
-                        <input class="form-field-set-input" type="text" name="mail" placeholder=" " id="mail">
-                        <label class="form-field-set-label" for="mail">email</label>
+                        <input class="form-field-set-input" type="text" name="mail" placeholder=" " id="email"
+                            autocomplete="off">
+                        <label class="form-field-set-label" for="email">email</label>
                         <span class="form-icon"><svg>
                                 <use href="./img/sprite.svg#icon-email"></use>
                             </svg></span>
                     </div>
-                    <button class="form-submit" type="submit">submit</button>
+                    <button class="form-button" type="submit">submit</button>
                 </form>
 
 
-                <form enctype="text/plain" class="form-tray" autocomplete="off">
+                <form enctype="text/plain" class="form-tray js-form-c">
                     <label class="form-field-set">
-                        <input class="form-field-set-input" type="text" name="name" placeholder=" ">
+                        <input class="form-field-set-input" type="text" name="name" placeholder=" " autocomplete="off">
                         <span class="form-field-set-label">name</span>
                         <span class="form-icon"><svg>
                                 <use href="./img/sprite.svg#icon-person"></use>
@@ -370,13 +388,13 @@
                     </label>
 
                     <label class="form-field-set">
-                        <input class="form-field-set-input" type="text" name="mail" placeholder=" ">
+                        <input class="form-field-set-input" type="text" name="mail" placeholder=" " autocomplete="off">
                         <span class="form-field-set-label">email</span>
                         <span class="form-icon"><svg>
                                 <use href="./img/sprite.svg#icon-email"></use>
                             </svg></span>
                     </label>
-                    <button class="form-submit" type="submit">submit</button>
+                    <button class="form-button" type="submit">submit</button>
                 </form>
             </div>
         </section>
@@ -422,18 +440,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-    <script>
-        (() => {
-            document.querySelector('.js-speaker-form')
-                // document.querySelector('.js-contact-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-                });
-        })();
-    </script>
+    <script src="./js/log.js"></script>
 </body>
 
 </html>

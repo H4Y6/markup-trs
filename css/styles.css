@@ -646,3 +646,18 @@ img {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
+.form-button {
+  cursor: pointer;
+  padding: 15px;
+  min-width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #42e35d;
+  transition: background-color 250ms;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: var(--accent-color);
+}

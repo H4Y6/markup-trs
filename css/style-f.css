@@ -11,7 +11,7 @@
     list-style: none;
     display: block;
     padding: 0;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 .checkbox-list>li:not(:last-child) {
@@ -32,12 +32,6 @@
     width: 15px;
     height: 15px;
 }
-
-/* .checkbox:checked {
-    width: 15px;
-    height: 15px;
-} */
-
 
 .checkbox-icon {
     display: block;
