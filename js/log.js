@@ -1,5 +1,5 @@
 (() => {
-    document.querySelector('.js-form-a')
+    document.querySelector('.js-form-c')
         .addEventListener('submit', e => {
             e.preventDefault();
             new FormData(e.currentTarget).forEach((value, name) =>

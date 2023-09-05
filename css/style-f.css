@@ -57,15 +57,23 @@
     opacity: 1;
 }
 
-.form-a-field {
+/* Form a */
+
+.form-a-field,
+.form-b-field,
+.form-c-field {
     position: relative;
 }
 
-.form-a-field:not(:last-child) {
+.form-a-field:not(:last-child),
+.form-b-field:not(:last-child),
+.form-c-field:not(:last-child) {
     margin-bottom: 25px;
 }
 
-.form-a-input {
+.form-a-input,
+.form-b-input,
+.form-c-input {
     margin: 0;
     padding: 0;
     font: inherit;
@@ -73,7 +81,9 @@
     border: 1px rgb(149, 236, 224) solid;
 }
 
-.form-a-input {
+.form-a-input,
+.form-b-input,
+.form-c-input {
     width: 100%;
     padding: 5px 5px 5px 43px;
 }
@@ -83,7 +93,9 @@
     background-color: #e2ece8;
 }
 
-.form-a-label {
+.form-a-label,
+.form-b-label,
+.form-c-label {
     position: absolute;
     top: 50%;
     left: 43px;
@@ -94,13 +106,13 @@
 
 .form-a-input:focus+.form-a-label,
 .form-a-input:hover+.form-a-label {
-    transform: translateY(-44px);
+    transform: translateY(-43px);
     color: #77a47e;
 }
 
 .form-a-input:not(:placeholder-shown)+.form-a-label,
 .form-a-input:not(:placeholder-shown)+.form-a-label {
-    transform: translateY(-44px);
+    transform: translateY(-43px);
 }
 
 .icon {
@@ -121,4 +133,35 @@
 .form-a-input:focus~.icon,
 .form-a-input:hover~.icon {
     fill: var(--accent-color);
+}
+
+/* Form b */
+
+.form-b-field:focus-within .form-b-label,
+.form-c-field:focus-within .form-c-label {
+    transform: translateY(-50%);
+}
+
+.form-b-field:focus-within .form-b-label,
+.form-c-field:focus-within .form-c-label {
+    transform: translateY(-43px);
+    color: var(--accent-color);
+}
+
+.form-b-field:focus-within .icon,
+.form-c-field:focus-within .icon {
+    fill: var(--accent-color);
+}
+
+.form-b-input:not(:placeholder-shown)~.form-b-label,
+.form-c-input:not(:placeholder-shown)~.form-c-label {
+    transform: translateY(-43px);
+}
+
+/* Form-c */
+
+
+.form-c-field {
+    display: block;
+
 }
