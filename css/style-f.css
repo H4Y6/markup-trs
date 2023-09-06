@@ -163,5 +163,54 @@
 
 .form-c-field {
     display: block;
+    width: 700px;
 
+}
+
+/* checkbox-a-form */
+
+.checkbox-a-list {
+    list-style: none;
+    padding: 0;
+}
+
+.checkbox-a-item {
+    position: relative;
+}
+
+.checkbox-a-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.checkbox-a-label {
+    display: block;
+    padding-left: 44px;
+    outline: 1px red solid;
+}
+
+.checkbox-a-icon {
+    appearance: none;
+    width: 44px;
+    height: 44px;
+    background-color: aqua;
+}
+
+.checkbox-a-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.checkbox-a-input:checked {
+    appearance: none;
+    width: 44px;
+    height: 44px;
+}
+
+.checkbox-a-input:checked+.checkbox-a-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
 }
