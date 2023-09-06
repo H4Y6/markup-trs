@@ -163,8 +163,6 @@
 
 .form-c-field {
     display: block;
-    width: 700px;
-
 }
 
 /* checkbox-a-form */
@@ -185,7 +183,6 @@
 .checkbox-a-label {
     display: flex;
     align-items: center;
-    outline: 1px red dashed;
 }
 
 .checkbox-a-icon {
