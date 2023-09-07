@@ -48,6 +48,8 @@
             <div class="container">
                 <h2 class="section-title visually-hidden">Forms</h2>
 
+                <button class="form-button" type="submit" data-open-modal>Order</button>
+
                 <form class="form js-form" enctype="text/plain">
 
                     <ul class="checkbox-list">
@@ -212,16 +214,22 @@
                 </ul>
             </div>
         </div>
-        <div class="backdrop is-hidden">
+        <div class="backdrop is-hidden" data-backdrop>
             <div class="modal-window">
-                <button class="close-btn" type="button">
+                <button class="close-btn" type="button" data-close-modal>
                     <svg width="18" height="18">
                         <use href="./img/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
+                <p class="modal-title">Let us know and we call you</p>
+                <form enctype="text/plain" class="modal-form">
+                    <label class="modal-lable"><input class="modal-input" type="text" name="name"
+                            placeholder="Eva Flown"></label>
+                </form>
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
     <script src="./js/log.js"></script>
     <script src="./js/togglePlaceholder.js"></script>
 </body>
