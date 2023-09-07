@@ -1,5 +1,5 @@
 (() => {
-    document.querySelector('.js-form-a-checkbox')
+    document.querySelector('.js-online-form')
         .addEventListener('submit', e => {
             e.preventDefault();
             new FormData(e.currentTarget).forEach((value, name) =>
