@@ -199,48 +199,70 @@
             <div class="footer-soc-box">
                 <p class="light-text">присоединяйтесь</p>
                 <ul class="footer-soc-icons soc-icons list">
-                    <li><a class="soc-link" href=""><svg>
+                    <li><a class="soc-link" title="instagram" href=""><svg>
                                 <use href="img/sprite.svg#icon-instagram"></use>
                             </svg></a></li>
-                    <li><a class="soc-link" href=""><svg>
-                                <use href="img/sprite.svg#icon-twitter"></use>
+                    <li><a class="soc-link" title="twitter href=""><svg>
+                                <use href=" img/sprite.svg#icon-twitter"></use>
                             </svg></a></li>
-                    <li><a class="soc-link" href=""><svg>
+                    <li><a class="soc-link" title="facebook" href=""><svg>
                                 <use href="img/sprite.svg#icon-facebook"></use>
                             </svg></a></li>
-                    <li><a class="soc-link" href=""><svg>
+                    <li><a class="soc-link" title="linkedin" href=""><svg>
                                 <use href="img/sprite.svg#icon-linkedin"></use>
                             </svg></a></li>
                 </ul>
             </div>
         </div>
-        <div class="backdrop is-hidden" data-backdrop>
-            <div class="modal-window">
-                <button class="close-btn" type="button" data-close-modal>
-                    <svg width="18" height="18">
-                        <use href="./img/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <p class="modal-title">Let us know and we call you</p>
-                <form enctype="text/plain" class="modal-form">
-                    <label class="modal-label">Name<input class="modal-input" type="text" name="name"
-                            placeholder="Eva Flown"></label>
-
-                    <label class="modal-label">Tel<input class="modal-input" type="tel" name="tel"
-                            placeholder="+! 033 765 7486"></label>
-
-                    <label class="modal-label">Email<input class="modal-input" type="email" name="email"
-                            placeholder="Eva-Flown@main.ti"></label>
-
-                    <label class="modal-label">Your message <textarea class="modal-textarea modal-input" name="text"
-                            placeholder="Type your message"></textarea></label>
-
-                    <button class="form-button" type="submit">Send</button>
-
-                </form>
-            </div>
-        </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal-window">
+            <button class="close-btn" type="button" title="close" data-close-modal>
+                <svg width="18" height="18">
+                    <use href="./img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Let us know and we call you</p>
+            <form enctype="text/plain" class="modal-form js-modal-form">
+                <label class="modal-label">Name <span class="modal-input-wrapper">
+                        <input class="modal-input" type="text" name="name" placeholder="Eva Flown" autocomplete="off">
+
+                        <svg class="modal-icon">
+                            <use href="./img/sprite.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-label">Tel <span class="modal-input-wrapper">
+                        <input class="modal-input" type="tel" name="tel" placeholder="+! 033 765 7486"
+                            autocomplete="off">
+
+                        <svg class="modal-icon">
+                            <use href="./img/sprite.svg#icon-tel"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-label">Email <span class="modal-input-wrapper">
+                        <input class="modal-input" type="email" name="email" placeholder="Eva-Flown@main.ti"
+                            autocomplete="off">
+
+                        <svg class="modal-icon">
+                            <use href="./img/sprite.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="modal-label">Your message <textarea class="modal-textarea modal-input" name="text"
+                        placeholder="Type your message"></textarea></label>
+
+                <button class="form-button" type="submit">Send</button>
+
+            </form>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/log.js"></script>
     <script src="./js/togglePlaceholder.js"></script>
