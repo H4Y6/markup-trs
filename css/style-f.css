@@ -286,9 +286,10 @@
 
 }
 
-.close-btn:focus {
+.close-btn:focus,
+.close-btn:hover {
     fill: var(--accent-color);
-    transform: scale(1.2);
+    transform: scale(2) rotate(.25turn);
 }
 
 .modal-title {
@@ -310,8 +311,12 @@
 }
 
 
-.modal-label:not(:last-child) {
-    margin-bottom: 15px;
+.modal-label {
+    margin-bottom: 10px;
+}
+
+.modal-text-label {
+    margin-bottom: 20px;
 }
 
 .modal-input-wrapper {
@@ -358,4 +363,36 @@
 .modal-label:focus .modal-textarea,
 .modal-label:hover .modal-textarea {
     fill: var(--accent-color);
+}
+
+.modal-policy-label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.modal-form-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-policy-input {
+    margin-right: 11px;
+}
+
+.modal-policy-input+span {
+    position: absolute;
+    left: 25%;
+    width: 16px;
+    height: 15px;
+    border: 2px var(--primary-color) solid;
+    border-radius: 4px;
+}
+
+.modal-policy-link {
+    display: block;
+    text-decoration: underline;
+    margin-left: 4px;
 }
