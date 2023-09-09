@@ -16,6 +16,5 @@
 <path fill="#2196f3" style="fill: var(--color1, #2196f3)" d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.442 16.538l-0.147-0.141-0.147 0.139-2.057 1.95 0.162 0.156 7.605 7.253 0.147-0.141 16.171-15.426-0.162-0.154-2.029-1.935-0.147 0.141-13.98 13.325-5.417-5.167z"></path></symbol>
 <symbol id="icon-check-a" viewBox="0 0 42 32">
-<path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
-</symbol>
-</defs></svg>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
+</symbol></defs></svg>
