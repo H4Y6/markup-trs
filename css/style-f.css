@@ -21,7 +21,8 @@
 
 .checkbox-label {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     padding-left: 25px;
 }
 
@@ -30,30 +31,32 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
 }
 
 .checkbox-icon {
-    display: block;
-    fill: var(--primary-light-color);
-}
-
-
-.checkbox~.checkbox-icon>svg {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    display: block;
-    appearance: none;
     width: 16px;
-    height: 15px;
+    height: 16px;
+    opacity: 0;
     transition: opacity 250ms var(--timing-function);
+    background-color: var(--accent-color);
+    fill: var(--primary-light-color);
 }
 
-.checkbox:checked~.checkbox-icon>svg {
+.checkbox-icon>svg {
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:checked~.checkbox-icon {
     opacity: 1;
 }
 
