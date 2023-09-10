@@ -397,7 +397,6 @@
 .modal-policy-link {
     display: block;
     text-decoration: underline;
-    margin-left: 4px;
 }
 
 .modal-policy-input:checked+.modal-policy-icon {
