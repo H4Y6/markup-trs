@@ -1,5 +1,15 @@
 /*             Example                    */
 
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 p,
 h1,
 h2,
@@ -34,4 +44,17 @@ body {
     background-color: #fff;
 }
 
-/* -------------------------------------------------------------- */
+/* -----------       card-set example       -------------- */
+
+/* .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.card-set__item{
+    width: 222px;
+    margin: 15px;
+} */
+
+/* ------------------------------------------------------ */
