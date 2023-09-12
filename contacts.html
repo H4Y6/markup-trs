@@ -17,29 +17,32 @@
 </head>
 
 <body>
-    <header class="page-header contact-page-header">
-        <div class="container header-block">
+    <header class="page-header">
+        <div class="container page-header__block">
             <nav class="site-nav">
-                <a class="logo" href="./index.html">
-                    <p><span>Web</span>Studio</p>
+                <a class="logo site-nav__logo" href="./index.html">
+                    <p><span class="logo__span">Web</span>Studio</p>
                 </a>
-                <ul class="site-nav-list list">
-                    <li><a class="site-nav-link" href="./index.html">Студия</a></li>
-                    <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="site-nav-link active" href="./contacts.html">Контакты</a></li>
-                    <li><a class="site-nav-link" href="./forms.html">Forms</a></li>
+                <ul class="menu list">
+                    <li><a class="menu__link" href="./index.html">Студия</a></li>
+                    <li><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="menu__link--active" href="./contacts.html">Контакты</a></li>
+                    <li><a class="menu__link" href="./forms.html">Forms</a></li>
                 </ul>
             </nav>
-            <ul class="contacts list">
-                <li><a class="contact-link" href="mailto:info@devstudio.com"><svg width="16" height="12">
+            <ul class="page-header__contacts list">
+                <li><a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
+                            height="12">
                             <use href="./img//sprite.svg#icon-envelope" />
                         </svg> info@devstudio.com</a></li>
-                <li><a class="contact-link" href="tel:+380961111111"><svg width="10" height="16">
+                <li><a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10"
+                            height="16">
                             <use href="./img/sprite.svg#icon-smartphone" />
                         </svg> +38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
+
 
     <main>
         <section class="section-c">
@@ -403,13 +406,13 @@
 
     <!-- Footer -->
 
-    <footer class="dark-theme">
+    <footer class="footer-page">
         <div class="container">
-            <div class="address-box">
+            <div class="address-box footer-page__address-box">
                 <a href="./index.html">
-                    <p class="logo light-text"><span>Web</span>Studio</p>
+                    <p class="logo footer__logo"><span class="logo__span">Web</span>Studio</p>
                 </a>
-                <p class="light-text address-margin-bottom">г. Киев, пр-т Леси Украинки, 26</p>
+                <p class="address-box__title">г. Киев, пр-т Леси Украинки, 26</p>
                 <address class="address">
                     <ul class="list">
                         <li class="address-margin-bottom">
@@ -420,7 +423,7 @@
                 </address>
             </div>
             <div class="footer-soc-box">
-                <p class="light-text">присоединяйтесь</p>
+                <p class="footer-soc-box__title ">присоединяйтесь</p>
                 <ul class="footer-soc-icons soc-icons list">
                     <li><a class="soc-link" href=""><svg>
                                 <use href="img/sprite.svg#icon-instagram"></use>
@@ -437,18 +440,17 @@
                 </ul>
             </div>
             <div class="footer-form-box">
-                <p class="footer-form-title light-text">Подпишитесь на рассылку</p>
-                <form class="footer-form"><label class="footer-form-label"><input type="text" class="footer-form-input"
-                            name="email" placeholder="E-mail"></label>
-                    <button class="footer-form-button form-button light-text" type="submit">Подписаться<svg
-                            class="button-icon" width="24" height="24">
+                <p class="footer-form-box__title">Подпишитесь на рассылку</p>
+                <form class="footer__form"><label class="footer__label"><input type="text" class="footer__input"
+                            name="email" placeholder="E-mail" autocomplete="off"></label>
+                    <button class="button form__button" type="submit">Подписаться<svg class="button__icon" width="24"
+                            height="24">
                             <use href="./img/sprite.svg#icon-send"></use>
                         </svg></button>
                 </form>
             </div>
         </div>
     </footer>
-
     <script src="./js/modal.js"></script>
     <script src="./js/titleTop.js"></script>
     <!-- <script src="./js/log.js"></script> -->
