@@ -1,0 +1,24 @@
+/* header contacts */
+
+.contacts {
+    display: flex;
+    column-gap: $prime-gap;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+        transition: color 250ms $timing-function;
+
+        &:focus,
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.contacts__icon {
+    display: flex;
+    margin-right: 10px;
+    fill: currentColor;
+}

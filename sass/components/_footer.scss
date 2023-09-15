@@ -1,0 +1,89 @@
+/* footer */
+
+.page-footer {
+    padding: 60px 0;
+    background-color: $dark-theme-bg-color;
+
+    &__address-box {
+        margin-right: 70px;
+    }
+}
+
+.address-box {
+    display: inline-flex;
+    flex-direction: column;
+
+    &__title {
+        margin-bottom: 6px;
+        color: $primary-light-color;
+    }
+}
+
+.address {
+    font-style: normal;
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-soc-box {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 93px;
+}
+
+.footer__logo,
+.footer-soc-box__title {
+    color: $primary-light-color;
+    margin-bottom: $secondary-gap;
+}
+
+.footer-soc-box__title,
+.footer-form-box__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: left;
+    color: $primary-light-color;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+/* Footer-form-box */
+
+.footer-form-box {
+    display: inline-flex;
+    width: calc(100% - 600px);
+    flex-direction: column;
+    min-height: 85px;
+}
+
+.footer__form {
+    display: flex;
+}
+
+.footer__label {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__input {
+    width: 100%;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+    color: rgba(255, 255, 255, 0.60);
+    background-color: $dark-theme-bg-color;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__icon {
+    margin-left: 10px;
+}
