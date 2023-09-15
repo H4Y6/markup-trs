@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="container page-header__block">
+            <nav class="site-nav">
+                <a class="logo site-nav__logo" href="./index.html">
+                    <p><span class="logo__span">Web</span>Studio</p>
+                </a>
+                <ul class="menu list">
+                    <li><a class="menu__link" href="./index.html">Студия</a></li>
+                    <li><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="menu__link--active" href="./contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li><a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
+                            height="12">
+                            <use href="./img//sprite.svg#icon-envelope" />
+                        </svg> info@devstudio.com</a></li>
+                <li><a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="10"
+                            height="16">
+                            <use href="./img/sprite.svg#icon-smartphone" />
+                        </svg> +38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">
+                Эффективные решения <br>
+                для вашего бизнеса
+            </h1>
+            <button class="button" type="button" aria-label="order service" data-open-modal>
+                Заказать услугу
+            </button>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="address-box page-footer__address-box">
+                <a href="./index.html">
+                    <p class="logo footer__logo"><span class="logo__span">Web</span>Studio</p>
+                </a>
+                <p class="address-box__title">г. Киев, пр-т Леси Украинки, 26</p>
+                <address class="address">
+                    <ul class="list">
+                        <li class="address-margin-bottom">
+                            <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li><a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-soc-box">
+                <p class="footer-soc-box__title ">присоединяйтесь</p>
+                <ul class="footer-soc-icons soc-icons list">
+                    <li class="soc-icons__item"><a class="soc__link" href=""><svg class="soc-icons__icon">
+                                <use href="img/sprite.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li class="soc-icons__item"><a class="soc__link" href=""><svg class="soc-icons__icon">
+                                <use href="img/sprite.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li class="soc-icons__item"><a class="soc__link" href=""><svg class="soc-icons__icon">
+                                <use href="img/sprite.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="soc-icons__item"><a class="soc__link" href=""><svg class="soc-icons__icon">
+                                <use href="img/sprite.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-form-box">
+                <p class="footer-form-box__title">Подпишитесь на рассылку</p>
+                <form class="footer__form"><label class="footer__label"><input type="text" class="footer__input"
+                            name="email" placeholder="E-mail" autocomplete="off"></label>
+                    <button class="button form__button" type="submit">Подписаться<svg class="button__icon" width="24"
+                            height="24">
+                            <use href="./img/sprite.svg#icon-send"></use>
+                        </svg></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
