@@ -1,0 +1,27 @@
+/* sections */
+
+.section {
+    padding: 94px 0;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.15;
+        letter-spacing: 1.08px;
+        color: $primary-color;
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,21 @@
+/* header */
+
+.page-header {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid #ececec;
+
+    &__block {
+        @include centeredFlex($alignItems: baseline, $justifyContent: space-between);
+    }
+}
+
+/*header site-nav */
+
+.site-nav__logo {
+    margin-right: 93px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: baseline;
+}
