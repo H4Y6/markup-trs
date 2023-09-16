@@ -1,22 +1,12 @@
 /* specifics section */
 
-.specifics-list {
-    display: flex;
+.specifics {
     text-align: left;
+    @include nColumnList(4)
 }
 
-.specifics__item {
-    flex-basis: calc((100% - 3 * $prime-gap) / 4);
-
-    &+& {
-        margin-left: $prime-gap;
-    }
-}
-
-.specifics__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.specific__icon {
+    @include centeredFlex();
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;

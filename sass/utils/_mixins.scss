@@ -3,3 +3,12 @@
     align-items: $alignItems;
     justify-content: $justifyContent;
 }
+
+@mixin nColumnList($n, $gap: $prime-gap ) {
+    display: flex;
+    gap: $gap;
+
+    &__item {
+        flex-basis: calc((100% - ($n - 1) * $prime-gap) / $n);
+    }
+}
