@@ -798,6 +798,7 @@ img {
   padding: 60px 0;
   background-color: #2f303a;
 }
+
 .footer__address-box {
   margin-right: 70px;
 }
@@ -819,10 +820,12 @@ img {
 .addresses {
   font-style: normal;
 }
-.addresses__item {
+
+.address__item {
   margin-bottom: 6px;
 }
-.addresses__link {
+
+.address__link {
   color: rgba(255, 255, 255, 0.6);
 }
 

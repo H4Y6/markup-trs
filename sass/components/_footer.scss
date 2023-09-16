@@ -3,10 +3,10 @@
 .footer {
     padding: 60px 0;
     background-color: $dark-theme-bg-color;
+}
 
-    &__address-box {
-        margin-right: 70px;
-    }
+.footer__address-box {
+    margin-right: 70px;
 }
 
 .address-box {
@@ -21,15 +21,16 @@
 
 .addresses {
     font-style: normal;
-
-    &__item {
-        margin-bottom: 6px;
-    }
-
-    &__link {
-        color: rgba(255, 255, 255, 0.6);
-    }
 }
+
+.address__item {
+    margin-bottom: 6px;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 
 .footer-soc-box {
     display: inline-flex;
