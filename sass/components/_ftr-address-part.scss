@@ -1,0 +1,22 @@
+/* Footer address part */
+
+.address-part {
+    @extend %footer-part;
+}
+
+.address-part__text {
+    margin-bottom: 6px;
+    color: $primary-light-color;
+}
+
+.addresses {
+    font-style: normal;
+}
+
+.address__item {
+    margin-bottom: 6px;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,14 @@
+/* Footer soc part */
+
+.soc-part {
+    @extend %footer-part;
+}
+
+.soc-part__title {
+    @extend .footer__logo;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: left;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}

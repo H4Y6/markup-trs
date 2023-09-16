@@ -1,0 +1,10 @@
+/* Footer form part */
+
+.form-part {
+    @extend %footer-part;
+    width: calc(100% - 600px);
+}
+
+.form-part__title {
+    @extend .soc-part__title
+}
