@@ -2,7 +2,7 @@
 @import "./base/normalize";
 @import "./utils/reset";
 @import "./utils/visually-hidden";
-
+@import "./utils/placeholders";
 @import "./utils/mixins";
 
 @import "./components/container";
@@ -22,4 +22,8 @@
 @import "./components/portfolio-btn";
 @import "./components/card";
 @import "./components/footer";
+@import "./components/ftr-address-part";
+@import "./components/ftr-soc-part";
+@import "./components/ftr-form-part";
+@import "./components/sign-form";
 @import "./components/modal";

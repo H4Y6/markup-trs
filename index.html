@@ -9,9 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"> -->
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -303,11 +300,11 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="address-box footer__address-box">
+      <div class="address-part footer__address-part">
         <a href="./index.html">
           <p class="logo footer__logo"><span class="logo__span">Web</span>Studio</p>
         </a>
-        <p class="address-box__title">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="address-part__text">г. Киев, пр-т Леси Украинки, 26</p>
         <address>
           <ul class="addresses list">
 
@@ -318,8 +315,8 @@
           </ul>
         </address>
       </div>
-      <div class="footer-soc-box">
-        <p class="footer-soc-box__title ">присоединяйтесь</p>
+      <div class="soc-part footer-soc-part">
+        <p class="soc-part__title ">присоединяйтесь</p>
         <ul class="footer-soc-icons soc-icons list">
           <li class="soc-icons__item"><a class="soc__link" href=""><svg class="soc-icons__icon">
                 <use href="img/sprite.svg#icon-instagram"></use>
@@ -335,17 +332,18 @@
               </svg></a></li>
         </ul>
       </div>
-      <div class="footer-form-box">
-        <p class="footer-form-box__title">Подпишитесь на рассылку</p>
-        <form class="footer__form"><label class="footer__label"><input type="text" class="footer__input" name="email"
+      <div class="form-part">
+        <p class="form-part__title">Подпишитесь на рассылку</p>
+        <form class="sign-form"><label class="sign__label"><input type="text" class="sign__input" name="email"
               placeholder="E-mail" autocomplete="off"></label>
-          <button class="button form__button" type="submit">Подписаться<svg class="button__icon" width="24" height="24">
+          <button class="button sign__button" type="submit">Подписаться<svg class="button__icon" width="24" height="24">
               <use href="./img/sprite.svg#icon-send"></use>
             </svg></button>
         </form>
       </div>
     </div>
   </footer>
+
   <script src="./js/modal.js"></script>
   <script src="./js/log.js"></script>
 </body>

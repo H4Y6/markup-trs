@@ -1,0 +1,26 @@
+.sign-form {
+    display: flex;
+}
+
+.sign__label {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sign__input {
+    width: 100%;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+    color: rgba(255, 255, 255, 0.60);
+    background-color: $dark-theme-bg-color;
+}
+
+.sign__button {
+    @include centeredFlex()
+}
+
+.button__icon {
+    margin-left: 10px;
+}
