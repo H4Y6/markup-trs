@@ -1,24 +1,15 @@
 /*  clients  */
 
-.client-list {
-    display: flex;
-}
+.clients {
+    @include nColumnList(6);
 
-.client__item {
-    display: flex;
-    flex-basis: calc((100% - 150px) / 6);
-    height: 92px;
-
-    &+& {
-        margin-left: $prime-gap;
+    .clients__item {
+        height: 92px;
     }
 }
 
 .client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    @include centeredFlex();
     height: 100%;
     border: 1px solid #afb1b8;
     border-radius: 4px;
