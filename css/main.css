@@ -938,8 +938,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay.is-hidden .modal {
-  -webkit-transform: scale(-0.14);
-          transform: scale(-0.14);
+  -webkit-transform: translate(-277%, -97%) scale(0.01) rotateZ(-0.25turn);
+          transform: translate(-277%, -97%) scale(0.01) rotateZ(-0.25turn);
 }
 
 .close-button {
