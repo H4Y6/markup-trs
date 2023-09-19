@@ -48,11 +48,11 @@
 }
 
 .main-box {
-    display: inline-flex;
-    background-color: #da9090;
-    width: 400px;
-    height: 300px;
     position: relative;
+    left: calc(50% - 200px);
+    background-color: #da9090;
+    height: 200px;
+    width: 400px;
 }
 
 .box {
