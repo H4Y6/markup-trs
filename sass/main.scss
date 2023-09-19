@@ -50,13 +50,16 @@
 .main-box {
     position: relative;
     left: calc(50% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: end;
     background-color: #da9090;
     height: 200px;
     width: 400px;
 }
 
 .box {
-    background: gold;
+    background: rgb(102, 64, 180);
     @include center(100px, 50px);
 }
 
