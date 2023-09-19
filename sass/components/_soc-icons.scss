@@ -20,6 +20,6 @@
     &:hover,
     &:focus {
         fill: #ffffff;
-        background-color: $accent-color;
+        background-color: getColor('accent');
     }
 }

@@ -7,8 +7,8 @@
     border: none;
     border-radius: 4px;
     letter-spacing: 0.48px;
-    color: $primary-color;
-    background: $secondary-background-color;
+    color: getColor('primary');
+    background: getColor('background');
     transition: color 250ms $timing-function, box-shadow 250ms $timing-function, background-color 250ms $timing-function;
 
     &:hover,
@@ -16,6 +16,6 @@
         color: #ffffff;
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
             0px 1px 2px 0px rgba(0, 0, 0, 0.8), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-        background-color: $accent-color;
+        background-color: getColor('accent');
     }
 }

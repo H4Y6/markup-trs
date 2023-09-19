@@ -249,8 +249,8 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.42px;
-  color: #212121;
-  background-color: #ffffff;
+  color: getColor("primary");
+  background-color: getColor("light");
 }
 
 a {
@@ -426,7 +426,7 @@ img {
   font-size: 36px;
   line-height: 1.15;
   letter-spacing: 1.08px;
-  color: #212121;
+  color: getCcolor("primary");
 }
 .section__subtitle {
   margin-bottom: 10px;
@@ -1123,7 +1123,7 @@ img {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   background-color: #da9090;
   height: 200px;
   width: 400px;

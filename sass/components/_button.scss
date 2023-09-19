@@ -11,9 +11,9 @@
     letter-spacing: 0.96px;
     border: none;
     border-radius: 4px;
-    color: $primary-light-color;
+    color: getColor('light');
     transition: background-color 250ms $timing-function;
-    background-color: $accent-color;
+    background-color: getColor('accent');
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
     &:hover,

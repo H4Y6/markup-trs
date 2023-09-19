@@ -7,6 +7,6 @@
     letter-spacing: 0.78px;
 
     &__span {
-        color: $accent-color;
+        color: getColor('accent');
     }
 }

@@ -42,17 +42,17 @@
 .order__form-field:focus-within>.order__comment,
 .order__form-field:focus-within>.order__input {
     outline: none;
-    border-color: $accent-color;
+    border-color: getColor('accent');
 }
 
 .order__form-field:hover>.order__label,
 .order__form-field:focus-within>.order__label {
-    color: $accent-color;
+    color: getColor('accent');
 }
 
 .order__form-field:hover>.order__icon,
 .order__form-field:focus-within>.order__icon {
-    fill: $accent-color;
+    fill: getColor('accent');
 }
 
 .order__icon,
@@ -80,22 +80,22 @@
     @include centeredFlex();
     width: 16px;
     height: 15px;
-    border: 2px $primary-color solid;
+    border: 2px getColor('primary') solid;
     border-radius: 3px;
     transition: background-color 250ms $timing-function, border-color 250ms $timing-function;
 
     .order__checkbox:checked+& {
-        background-color: $accent-color;
-        border-color: $accent-color;
+        background-color: getColor('accent');
+        border-color: getColor('accent');
     }
 }
 
 .order__consent-text {
-    color: $secondary-color;
+    color: getColor('secondary');
 }
 
 .order__link {
-    color: $accent-color;
+    color: getColor('accent');
     font-family: Roboto;
     text-decoration: underline;
 }

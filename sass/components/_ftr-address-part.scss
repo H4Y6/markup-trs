@@ -6,7 +6,7 @@
 
 .address-part__text {
     margin-bottom: 6px;
-    color: $primary-light-color;
+    color: getColor('light');
 }
 
 .addresses {
