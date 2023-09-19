@@ -9,7 +9,7 @@
         font-size: 36px;
         line-height: 1.15;
         letter-spacing: 1.08px;
-        color: $primary-color;
+        color: getCcolor('primary');
     }
 
     &__subtitle {
@@ -22,6 +22,6 @@
     }
 
     &__text {
-        color: $secondary-color;
+        color: getColor('secondary');
     }
 }

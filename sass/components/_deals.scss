@@ -15,7 +15,7 @@
     bottom: 0;
     width: 100%;
     height: 70px;
-    color: $primary-light-color;
+    color: getColor('light');
     text-align: center;
     font-weight: 700;
     line-height: 1.15;

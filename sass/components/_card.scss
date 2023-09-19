@@ -40,7 +40,7 @@
 }
 
 .img-overlay__text {
-    color: $primary-light-color;
+    color: getColor('light');
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -52,7 +52,7 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    background: $primary-background-color;
+    background: getColor('light');
     padding: 20px 24px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .card__text {
-    color: $secondary-color;
+    color: getColor('secondary');
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.48px;

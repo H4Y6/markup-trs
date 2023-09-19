@@ -16,6 +16,6 @@
         line-height: calc(60 / 44);
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: $primary-light-color;
+        color: getColor('light');
     }
 }

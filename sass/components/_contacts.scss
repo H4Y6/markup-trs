@@ -7,12 +7,12 @@
     &__link {
         display: flex;
         align-items: center;
-        color: $secondary-color;
+        color: getColor('secondary');
         transition: color 250ms $timing-function;
 
         &:focus,
         &:hover {
-            color: $accent-color;
+            color: getColor('accent');
         }
     }
 }

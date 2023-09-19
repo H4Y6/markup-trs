@@ -6,8 +6,9 @@ body {
     line-height: 1.7;
     letter-spacing: 0.42px;
 
-    color: $primary-color;
-    background-color: $primary-background-color;
+    color: getColor('primary');
+    background-color: getColor('light');
+    ;
 }
 
 a {

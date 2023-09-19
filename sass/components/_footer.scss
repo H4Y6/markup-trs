@@ -2,7 +2,7 @@
 
 .footer {
     padding: 60px 0;
-    background-color: $dark-theme-bg-color;
+    background-color: getColor('dark');
 }
 
 .footer__address-part {
@@ -10,7 +10,7 @@
 }
 
 .footer__logo {
-    color: $primary-light-color;
+    color: getColor('light');
     margin-bottom: $secondary-gap;
 }
 
