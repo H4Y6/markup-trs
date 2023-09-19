@@ -29,3 +29,52 @@
 @import "./components/main-overlay";
 @import "./components/modal";
 @import "./components/order-form";
+
+
+@mixin center ($width, $height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: 50%;
+    left: 50%;
+    margin-top: $height / -2;
+    margin-left: $width / -2;
+}
+
+@mixin button($size) {
+    padding: 0.25 * $size 1.75 * $size;
+    font-size: $size;
+    height: 2*$size;
+}
+
+.main-box {
+    display: inline-flex;
+    background-color: #da9090;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.box {
+    background: gold;
+    @include center(100px, 50px);
+}
+
+%button {
+    text-transform: uppercase;
+}
+
+.small-btn {
+    @include button(16px);
+    @extend %button
+}
+
+.middle-btn {
+    @include button(20px);
+    @extend %button
+}
+
+.big-btn {
+    @include button(28px);
+    @extend %button
+}
