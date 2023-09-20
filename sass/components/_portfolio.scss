@@ -5,19 +5,15 @@
 }
 
 .btn-list {
-    display: flex;
-    justify-content: center;
+    @extend %list;
+    @include centeredFlex();
+    column-gap: 8px;
     margin-bottom: 50px;
-}
-
-.btn__item {
-    &+& {
-        margin-left: 8px;
-    }
 }
 
 .card-list {
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
+    @extend %list;
 }

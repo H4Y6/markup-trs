@@ -1,6 +1,7 @@
 /*  clients  */
 
 .clients {
+    @extend %list;
     @include nColumnList(6);
 
     .clients__item {

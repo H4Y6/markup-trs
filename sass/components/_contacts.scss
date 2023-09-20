@@ -3,6 +3,7 @@
 .contacts {
     display: flex;
     column-gap: $prime-gap;
+    @extend %list;
 
     &__link {
         display: flex;

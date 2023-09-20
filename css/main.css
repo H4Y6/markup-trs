@@ -273,12 +273,6 @@ img {
   height: auto;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -300,6 +294,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.addresses, .card-list, .btn-list, .soc-icons, .clients, .team-mates, .deals, .specifics, .contacts, .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -677,14 +677,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   margin-bottom: 50px;
-}
-
-.btn__item + .btn__item {
-  margin-left: 8px;
 }
 
 .card-list {
