@@ -1,6 +1,7 @@
 /* deal section */
 
 .deals {
+    @extend %list;
     @include nColumnList(3)
 }
 
