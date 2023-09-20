@@ -15,7 +15,7 @@
 }
 
 .team-mates {
-    @extend %list;
+    @include list();
     @include nColumnList(4);
 
     &__item {

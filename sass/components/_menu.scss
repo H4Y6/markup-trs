@@ -1,7 +1,7 @@
 .menu {
     display: flex;
     column-gap: 50px;
-    @extend %list;
+    @include list();
 
     &__link {
         color: getColor('primary');
