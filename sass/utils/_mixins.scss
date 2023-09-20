@@ -1,3 +1,9 @@
+@mixin list($paddingLeft: 0) {
+    list-style: none;
+    margin: 0;
+    padding-left: $paddingLeft;
+}
+
 @mixin centeredFlex($type: flex, $alignItems: center, $justifyContent: center) {
     display: $type;
     align-items: $alignItems;
@@ -11,4 +17,9 @@
     &__item {
         flex-basis: calc((100% - ($n - 1) * $prime-gap) / $n);
     }
+}
+
+@mixin footer-part() {
+    display: inline-flex;
+    flex-direction: column;
 }

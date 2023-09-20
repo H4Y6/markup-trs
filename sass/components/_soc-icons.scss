@@ -1,5 +1,5 @@
 .soc-icons {
-    @extend %list;
+    @include list(32px);
     @include nColumnList(4, 10px);
 
     &__icon {

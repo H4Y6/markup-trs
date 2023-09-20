@@ -1,7 +1,11 @@
 /* Footer soc part */
 
 .soc-part {
-    @extend %footer-part;
+    @include footer-part();
+}
+
+.footer__soc-icons {
+    padding-left: 0;
 }
 
 .soc-part__title {

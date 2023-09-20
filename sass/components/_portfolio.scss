@@ -5,7 +5,7 @@
 }
 
 .btn-list {
-    @extend %list;
+    @include list();
     @include centeredFlex();
     column-gap: 8px;
     margin-bottom: 50px;
@@ -15,5 +15,5 @@
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
-    @extend %list;
+    @include list();
 }

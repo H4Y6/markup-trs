@@ -1,7 +1,7 @@
 /*  clients  */
 
 .clients {
-    @extend %list;
+    @include list();
     @include nColumnList(6);
 
     .clients__item {

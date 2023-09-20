@@ -1,7 +1,7 @@
 /* Footer address part */
 
 .address-part {
-    @extend %footer-part;
+    @include footer-part();
 }
 
 .address-part__text {
@@ -10,7 +10,7 @@
 }
 
 .addresses {
-    @extend %list;
+    @include list();
     font-style: normal;
 }
 

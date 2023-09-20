@@ -1,7 +1,7 @@
 /* specifics section */
 
 .specifics {
-    @extend %list;
+    @include list();
     text-align: left;
     @include nColumnList(4)
 }

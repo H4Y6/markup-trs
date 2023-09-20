@@ -1,7 +1,7 @@
 /* Footer form part */
 
 .form-part {
-    @extend %footer-part;
+    @include footer-part();
     width: calc(100% - 600px);
 }
 
