@@ -4,10 +4,6 @@
     @include footer-part();
 }
 
-.footer__soc-icons {
-    padding-left: 0;
-}
-
 .soc-part__title {
     @extend .footer__logo;
     font-weight: 700;
