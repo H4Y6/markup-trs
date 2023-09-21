@@ -11,10 +11,9 @@
 
     &__title {
         margin-bottom: $prime-gap;
-        font-size: 44px;
         font-weight: 900;
-        line-height: calc(60 / 44);
-        letter-spacing: 0.06em;
+
+        @include font(2.64px, 44px, calc(60 / 44));
         text-transform: uppercase;
         color: getColor('light');
     }
