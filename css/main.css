@@ -301,13 +301,12 @@ img {
 }
 
 /*header site-nav */
-.site-nav__logo {
-  margin-right: 93px;
-}
-
 .site-nav {
   display: flex;
   align-items: baseline;
+}
+.site-nav__logo {
+  margin-right: 93px;
 }
 
 .logo {
