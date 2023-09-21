@@ -23,3 +23,10 @@
     display: inline-flex;
     flex-direction: column;
 }
+
+
+@mixin font($letterSpacing, $fontSize: 16px, $lineHeight: 1.15, ) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
