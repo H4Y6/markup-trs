@@ -1,6 +1,7 @@
 .soc-icons {
-    @include list(32px);
+    @include list();
     @include nColumnList(4, 10px);
+    @include centeredFlex;
 
     &__icon {
         width: 20px;
