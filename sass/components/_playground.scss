@@ -8,7 +8,13 @@
     margin-left: calc($width / -2);
 }
 
+%button {
+    text-transform: uppercase;
+    color: getColor('dark')
+}
+
 @mixin button($size) {
+    @extend %button;
     padding: 0.25 * $size 1.75 * $size;
     font-size: $size;
     height: 2*$size;
@@ -18,33 +24,32 @@
     position: relative;
     left: calc(50% - 200px);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
+    padding: 5px;
     background-color: #da9090;
     height: 200px;
     width: 400px;
 }
 
 .box {
-    background: rgb(102, 64, 180);
+    background: getColor('accent');
     @include center(100px, 50px);
 }
 
-%button {
-    text-transform: uppercase;
-}
+// $sizes: 16, 20, 28;
+// @each $size in $sizes {
+//     .btn-#{$size}px {
+//         text-transform: uppercase;
+//         padding: calc(0.25 * #{$size}px) calc(1.75 * #{$size}px);
+//         font-size: #{$size}px;
+//         height:calc(2 * #{$size}px);
+//     }
+// }
 
-.small-btn {
-    @include button(16px);
-    @extend %button
-}
 
-.middle-btn {
-    @include button(20px);
-    @extend %button
-}
-
-.big-btn {
-    @include button(28px);
-    @extend %button
+@each $size in 16px, 20px, 28px {
+    .btn-#{$size} {
+        @include button(($size))
+    }
 }
