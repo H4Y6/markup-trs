@@ -985,7 +985,7 @@ img {
   text-decoration: underline;
 }
 
-.btn-28px, .btn-20px, .btn-16px {
+.btn-28px, .btn-20px, .btn-16px, .box {
   text-transform: uppercase;
   color: #2f303a;
 }
@@ -1003,6 +1003,11 @@ img {
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #ffffff;
   background: #2196f3;
   position: absolute;
   width: 100px;
@@ -1016,17 +1021,17 @@ img {
 .btn-16px {
   padding: 4px 28px;
   font-size: 16px;
-  height: 32px;
+  height: 28px;
 }
 
 .btn-20px {
   padding: 5px 35px;
   font-size: 20px;
-  height: 40px;
+  height: 35px;
 }
 
 .btn-28px {
   padding: 7px 49px;
   font-size: 28px;
-  height: 56px;
+  height: 49px;
 }/*# sourceMappingURL=main.css.map */
