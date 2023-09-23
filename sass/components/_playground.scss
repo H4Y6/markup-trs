@@ -17,7 +17,7 @@
     @extend %button;
     padding: 0.25 * $size 1.75 * $size;
     font-size: $size;
-    height: 2*$size;
+    height: 1.75 * $size;
 }
 
 .main-box {
@@ -32,10 +32,6 @@
     width: 400px;
 }
 
-.box {
-    background: getColor('accent');
-    @include center(100px, 50px);
-}
 
 // $sizes: 16, 20, 28;
 // @each $size in $sizes {
@@ -47,8 +43,30 @@
 //     }
 // }
 
+$sizes: (
+    'small': 16px,
+    'middle': 20px,
+    'big': 28px
+);
 
-@each $size in 16px, 20px, 28px {
+@function getSize($size) {
+    @return map-get($sizes, $size)
+}
+
+;
+
+.box {
+    @extend %button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(getSize('middle') + 2px);
+    color: getColor('light');
+    background: getColor('accent');
+    @include center(100px, 50px);
+}
+
+@each $size in getSize('small'), getSize('middle'), getSize('big') {
     .btn-#{$size} {
         @include button(($size))
     }
