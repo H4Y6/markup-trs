@@ -992,12 +992,7 @@ img {
 
 .main-box {
   position: relative;
-  left: calc(50% - 200px);
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 5px;
-  background-color: #da9090;
+  margin: 0 auto;
   height: 200px;
   width: 400px;
 }
@@ -1006,7 +1001,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 18px;
   color: #ffffff;
   background: #2196f3;
   position: absolute;
@@ -1021,17 +1016,41 @@ img {
 .btn-16px {
   padding: 4px 28px;
   font-size: 16px;
-  height: 28px;
 }
 
 .btn-20px {
   padding: 5px 35px;
   font-size: 20px;
-  height: 35px;
 }
 
 .btn-28px {
   padding: 7px 49px;
   font-size: 28px;
-  height: 49px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+.btn:nth-child(3) {
+  background-color: #78f3de;
+  margin: 0 18px;
+}
+
+.main-box-a {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  column-gap: 5px;
+  width: 400px;
+  height: 100px;
+  background-color: #f23c3c;
+}
+
+.btn-a {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 24px;
+  width: 100%;
+  border-color: transparent;
 }/*# sourceMappingURL=main.css.map */

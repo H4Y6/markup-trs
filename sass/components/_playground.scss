@@ -4,8 +4,14 @@
     height: $height;
     top: 50%;
     left: 50%;
-    margin-top: calc($height / -2);
-    margin-left: calc($width / -2);
+    margin-top: $height / -2;
+    margin-left: $width / -2;
+}
+
+@mixin button($size) {
+    @extend %button;
+    padding: 0.25 * $size 1.75 * $size;
+    font-size: $size;
 }
 
 %button {
@@ -13,23 +19,41 @@
     color: getColor('dark')
 }
 
-@mixin button($size) {
-    @extend %button;
-    padding: 0.25 * $size 1.75 * $size;
-    font-size: $size;
-    height: 1.75 * $size;
-}
+
 
 .main-box {
     position: relative;
-    left: calc(50% - 200px);
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 5px;
-    background-color: #da9090;
+    margin: 0 auto;
     height: 200px;
     width: 400px;
+}
+
+.box {
+    @extend %button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: getColor('light');
+    background: getColor('accent');
+    @include center(100px, 50px);
+}
+
+$sizes: 16px, 20px, 28px;
+
+@each $size in $sizes {
+    .btn-#{$size} {
+        @include button($size)
+    }
+}
+
+.btn {
+    border-radius: 5px;
+
+    &:nth-child(3) {
+        background-color: #78f3de;
+        margin: 0 18px;
+    }
 }
 
 
@@ -43,31 +67,38 @@
 //     }
 // }
 
-$sizes: (
-    'small': 16px,
-    'middle': 20px,
-    'big': 28px
-);
+// $sizes: (
+//     'small': 16px,
+//     'middle': 20px,
+//     'big': 28px
+// );
 
-@function getSize($size) {
-    @return map-get($sizes, $size)
+// @function getSize($size) {
+//     @return map-get($sizes, $size)
+// }
+
+// @each $size in getSize('small'), getSize('middle'), getSize('big') {
+//     .btn-#{$size} {
+//         @include button(($size))
+//     }
+// }
+
+.main-box-a {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    column-gap: 5px;
+    width: 400px;
+    height: 100px;
+    background-color: #f23c3c;
 }
 
-;
 
-.box {
-    @extend %button;
-    display: flex;
+.btn-a {
     justify-content: center;
     align-items: center;
-    font-size: calc(getSize('middle') + 2px);
-    color: getColor('light');
-    background: getColor('accent');
-    @include center(100px, 50px);
-}
-
-@each $size in getSize('small'), getSize('middle'), getSize('big') {
-    .btn-#{$size} {
-        @include button(($size))
-    }
+    padding: 0;
+    height: 24px;
+    width: 100%;
+    border-color: transparent;
 }
