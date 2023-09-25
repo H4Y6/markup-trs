@@ -1,20 +1,40 @@
 .hero {
-    padding: 200px;
+    padding: 118px 0;
     text-align: center;
 
     background-color: #c4c4c4;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    background-size: 100%;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
 
+
+    @media screen and (min-width: 768px) {
+        background-size: 1500px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-size: 1600px;
+        padding: 200px 0;
+    }
+
     &__title {
+        padding: 0 80px;
         margin-bottom: $prime-gap;
         font-weight: 900;
 
-        @include font(2.64px, 44px, calc(60 / 44));
+        @include font(1.56px, 26px, calc(42 / 26));
         text-transform: uppercase;
         color: getColor('light');
+
+        @media screen and (min-width: 768px) {
+            padding: 0 220px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include font(2.64px, 44px, calc(60 / 44));
+            padding: 0 340px;
+        }
     }
 }

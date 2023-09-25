@@ -4,6 +4,10 @@
     padding: 94px 0;
     text-align: center;
 
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
+
     &__title {
         margin-bottom: 50px;
         @include font(1.08px, 36px);

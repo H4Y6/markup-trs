@@ -12,6 +12,7 @@
 
 @mixin nColumnList($n, $gap: $prime-gap ) {
     display: flex;
+    flex-wrap: wrap;
     gap: $gap;
 
     &__item {
