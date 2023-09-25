@@ -1,0 +1,29 @@
+/* specifics section */
+
+.specifics {
+    @include list();
+    @include nColumnList(1);
+
+    @media screen and (min-width: 768px) {
+        @include nColumnList(2);
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include nColumnList(4);
+        text-align: left;
+    }
+
+}
+
+.specific__icon {
+    @include centeredFlex();
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: $prime-gap;
+}
+
+.section__text--specific {
+    text-align: left;
+}
