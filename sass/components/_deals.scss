@@ -1,5 +1,13 @@
 /* deal section */
 
+.section--view {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
 .deals {
     @include list();
     @include nColumnList(3)
