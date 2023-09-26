@@ -2,7 +2,7 @@ $colors: (
     'accent': #2196f3,
     'primary': #212121,
     'secondary': #757575,
-    'light': #ffffff,
+    'light': #fff,
     'dark': #2f303a,
     'background': #f5f4f4,
 
@@ -10,4 +10,19 @@ $colors: (
 
 @function getColor($color) {
     @return map-get($colors, $color);
+}
+
+$color-set: (
+    '0':#000,
+    '1':#afb1b8,
+    '2':#ececec,
+    '3':#eee,
+    '4':rgba(255, 255, 255, 0.2),
+    '5':rgba(255, 255, 255, 0.3),
+    '6':rgba(255, 255, 255, 0.6),
+    '7':rgba(47, 48, 58, 0.4),
+);
+
+@function getOneColor($index) {
+    @return map-get($color-set, $index);
 }

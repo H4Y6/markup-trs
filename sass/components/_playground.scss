@@ -4,8 +4,8 @@
     height: $height;
     top: 50%;
     left: 50%;
-    margin-top: $height / -2;
-    margin-left: $width / -2;
+    margin-top: calc($height / -2);
+    margin-left: calc($width / -2);
 }
 
 @mixin button($size) {
@@ -48,8 +48,6 @@ $sizes: 16px, 20px, 28px;
 }
 
 .btn {
-    border-radius: 5px;
-
     &:nth-child(3) {
         background-color: #78f3de;
         margin: 0 18px;
