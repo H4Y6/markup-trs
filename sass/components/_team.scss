@@ -4,7 +4,7 @@
     background-color: getColor('background');
 
     &__description {
-        padding: 30px 15px 16px;
+        padding: 30px 5px 16px;
     }
 
     &__subtitle {
@@ -16,11 +16,19 @@
 
 .team-mates {
     @include list();
-    @include nColumnList(4);
+    @include nColumnList(1);
+
+    @media screen and (min-width:768px) {
+        @include nColumnList(2);
+    }
+
+    @media screen and (min-width:1200px) {
+        @include nColumnList(4);
+    }
 
     &__item {
         padding-bottom: 30px;
-        @include font(.48);
+        @include font(.48px);
         border-radius: 0px 0px 4px 4px;
         background: getColor('light');
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
