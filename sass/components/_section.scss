@@ -1,7 +1,7 @@
 /* sections */
 
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
     text-align: center;
 
     @media screen and (min-width:1200px) {
@@ -9,9 +9,13 @@
     }
 
     &__title {
-        margin-bottom: 50px;
-        @include font(1.08px, 36px);
+        margin-bottom: $prime-gap;
+        @include font(.84px, 28px);
         color: getCcolor('primary');
+
+        // margin-bottom: 50px;
+        // @include font(1.08px, 36px);
+        // color: getCcolor('primary');
     }
 
     &__subtitle {
