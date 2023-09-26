@@ -3,7 +3,7 @@
     padding: 6px 22px;
     font-weight: 500;
 
-    @include font(.48px, 16px, 1.62);
+    @include font($lineHeight: calc(26 / 16));
     border: none;
     border-radius: 4px;
     color: getColor('primary');

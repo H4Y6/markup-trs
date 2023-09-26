@@ -1,19 +1,14 @@
 /* Portfolio  section*/
 
-.portfolio {
-    padding: 94px 0;
-}
-
 .btn-list {
     @include list();
-    @include centeredFlex();
-    column-gap: 8px;
-    margin-bottom: 50px;
-}
-
-.card-list {
     display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
-    @include list();
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        @include centeredFlex();
+    }
 }
