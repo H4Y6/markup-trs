@@ -1,9 +1,9 @@
 @import "./utils/variables";
-@import "./base/normalize";
 @import "./utils/colors";
+@import "./utils/mixins";
+@import "./base/normalize";
 @import "./base/reset";
 @import "./utils/visually-hidden";
-@import "./utils/mixins";
 
 @import "./components/container";
 @import "./components/page-header";
@@ -18,8 +18,7 @@
 @import "./components/clients";
 @import "./components/soc-icons";
 @import "./components/button";
-@import "./components/portfolio";
-@import "./components/portfolio-btn";
+@import "./components/portfolio-buttons";
 @import "./components/cards";
 @import "./components/footer";
 @import "./components/ftr-address-part";
