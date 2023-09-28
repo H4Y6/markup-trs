@@ -19,11 +19,21 @@
         <a class="logo site-nav__logo" href="./index.html">
           <p><span class="logo__span">Web</span>Studio</p>
         </a>
-        <!-- <ul class="menu">
+
+        <ul class="menu js-menu-container" id="mobile-menu">
           <li><a class="menu__link--active" href="./index.html">Studio</a></li>
           <li><a class="menu__link" href="./portfolio.html">Portfolio</a></li>
           <li><a class="menu__link" href="./contacts.html">Contacts</a></li>
-        </ul> -->
+        </ul>
+
+        <button class="toggle js-toggle-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="logo-overlay"></span>
+          <svg class="toggle__icons" width="40" height="40">
+            <use class="toggle__icon-menu" href="./img/sprite.svg#icon-menu"></use>
+            <use class="toggle__icon-close" href="./img/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
       </nav>
       <!-- <ul class="contacts">
         <li><a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
@@ -344,13 +354,10 @@
       </div>
     </div>
   </footer> -->
-  <!-- <script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script> -->
-  <!-- <script defer src="js/mobile-menu.js"></script> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/log.js"></script>
 </body>

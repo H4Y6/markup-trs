@@ -1,10 +1,30 @@
 .logo {
-    color: #000;
+    padding: 16px 0;
     font-family: Raleway;
     font-weight: 700;
-    @include font(.78px, 26px, 1.15, );
+    @include font(.03px, 24px, calc(28 / 24), );
+    color: #000;
+
+    @media screen and (min-width:1200px) {
+        @include font(.78px, 26px, 1.15, );
+        padding: 24px 0 25px;
+    }
 
     &__span {
         color: getColor('accent');
+    }
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    transform: translate(-420px, 0px);
+    width: 410px;
+    height: 44px;
+    background-color: getColor('light');
+
+    .menu.is-open+.toggle & {
+        transform: translate(0px, 0px);
     }
 }

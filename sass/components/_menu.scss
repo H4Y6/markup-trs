@@ -1,7 +1,17 @@
 .menu {
-    display: flex;
-    column-gap: 50px;
     @include list();
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+    width: 100vw;
+    height: 91.4%;
+    padding: 8px 5px 48px 40px;
+    background-color: #fff;
+
+    &.is-open {
+        transform: translateX(0);
+    }
 
     &__link {
         color: getColor('primary');
@@ -14,19 +24,59 @@
     }
 }
 
-.menu__link--active {
+.toggle {
     position: relative;
-    color: getColor('accent');
+    display: block;
+    top: 0;
+    left: 0;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 
-    &::after {
-        position: absolute;
-        left: 0;
-        bottom: -29px;
-        content: "";
+    &:hover,
+    &:focus {
+        fill: getColor('accent')
+    }
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.toggle__icon-close {
+    display: none;
+
+    .menu.is-open+.toggle & {
         display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: getColor('accent');
+    }
+}
+
+.menu.is-open+.toggle .toggle__icon-menu {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .menu {
+        display: flex;
+        gap: 50px 32px;
+    }
+
+    .menu__link--active {
+        position: relative;
+        color: getColor('accent');
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -29px;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: getColor('accent');
+        }
     }
 }

@@ -1,7 +1,6 @@
 /* header */
 
 .page-header {
-    padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
 
     &__block {
@@ -13,9 +12,26 @@
 
 .site-nav {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
-    &__logo {
-        margin-right: 93px;
+    @media screen and (min-width:768px) {
+        align-items: baseline;
+
+        &__logo {
+            margin-right: 88px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__logo {
+            margin-right: 93px;
+        }
     }
 }
+
+// .page-header .site-nav__logo,
+// span {
+//     color: #fff;
+// }
