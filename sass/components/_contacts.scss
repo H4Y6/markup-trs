@@ -1,25 +1,68 @@
 /* header contacts */
 
 .contacts {
-    display: flex;
-    column-gap: $prime-gap;
+    display: none;
+    flex-direction: column-reverse;
     @include list();
+    margin-bottom: 64px;
 
-    &__link {
+    @media screen and (min-width:768px) {
         display: flex;
-        align-items: center;
-        color: getColor('secondary');
-        transition: color 250ms $timing-function;
+        @include list();
+    }
 
-        &:focus,
-        &:hover {
-            color: getColor('accent');
-        }
+    @media screen and (min-width:1200px) {
+
+        flex-direction: row;
     }
 }
 
-.contacts__icon {
-    display: flex;
-    margin-right: 10px;
-    fill: currentColor;
+.contact__item:not(:last-child) {
+    margin-bottom: 32px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
+
+}
+
+.contact__link {
+    // display: flex;
+    // align-items: center;
+    @include font($fontSize: 24px);
+    color: getColor('secondary');
+    transition: color 250ms $timing-function;
+
+    &--tel {
+        color: getColor('accent');
+    }
+
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+    }
+
+    &:focus,
+    &:hover {
+        color: getColor('accent');
+    }
+}
+
+.contact__icon {
+    display: none;
+
+    @media screen and (min-width:768px) {
+
+        display: flex;
+        margin-right: 8px;
+        fill: currentColor;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 10px;
+    }
 }

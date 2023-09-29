@@ -3,35 +3,37 @@
 .page-header {
     border-bottom: 1px solid #ececec;
 
+
     &__block {
-        @include centeredFlex($alignItems: baseline, $justifyContent: space-between);
+        height: 60px;
+        @include centeredFlex($alignItems: center, $justifyContent: space-between);
+
+        // @media screen and (min-width:768px) {}
+    }
+}
+
+.page-header__logo {
+    @media screen and (min-width:1200px) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width:1200px) {
+        & {
+            margin-right: 93px;
+        }
     }
 }
 
 /*header site-nav */
 
 .site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    margin-bottom: auto;
+    // display: flex;
+    // align-items: center;
 
     @media screen and (min-width:768px) {
+        justify-content: start;
         align-items: baseline;
-
-        &__logo {
-            margin-right: 88px;
-        }
-    }
-
-    @media screen and (min-width:768px) {
-        &__logo {
-            margin-right: 93px;
-        }
+        margin-right: auto;
     }
 }
-
-// .page-header .site-nav__logo,
-// span {
-//     color: #fff;
-// }
