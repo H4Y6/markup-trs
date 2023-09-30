@@ -339,6 +339,7 @@ img {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     display: flex;
@@ -482,6 +483,7 @@ img {
 }
 .mobile-menu.is-open ~ .toggle {
   position: absolute;
+  z-index: 2;
   top: 10px;
   right: 15px;
 }
