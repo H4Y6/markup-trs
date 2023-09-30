@@ -3,7 +3,6 @@
     @include font(.8px, 40px);
     display: flex;
     flex-direction: column;
-    gap: 32px;
 
     &__link {
         color: getColor('primary');
@@ -20,16 +19,19 @@
     }
 }
 
-
+.menu__item {
+    margin-bottom: 32px;
+}
 
 @media screen and (min-width:768px) {
     .menu {
-        display: flex;
-        gap: 50px;
+        flex-direction: row;
+        @include font(.28px, 14px);
     }
 
     .menu__item {
-        margin-bottom: 32px;
+        margin-bottom: 0;
+        margin-right: $prime-gap;
     }
 
     .menu__link--active {
@@ -84,12 +86,8 @@
     display: none;
 }
 
-.mobile-menu.is-open .site-nav,
+.mobile-menu.is-open .menu,
 .mobile-menu.is-open .contacts {
     display: flex;
     flex-direction: column;
-}
-
-.mobile-menu.is-open .mobile-soc-list {
-    display: flex;
 }

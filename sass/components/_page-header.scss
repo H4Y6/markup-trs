@@ -2,38 +2,27 @@
 
 .page-header {
     border-bottom: 1px solid #ececec;
+}
 
+.page-header__block {
+    height: 60px;
+    @include centeredFlex($alignItems: center, $justifyContent: space-between);
 
-    &__block {
-        height: 60px;
-        @include centeredFlex($alignItems: center, $justifyContent: space-between);
-
-        // @media screen and (min-width:768px) {}
+    @media screen and (min-width:768px) {
+        @include centeredFlex($alignItems: baseline, $justifyContent: start);
+        height: 80px;
     }
 }
 
 .page-header__logo {
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         margin-right: 88px;
+        padding-top: 25px;
     }
 
     @media screen and (min-width:1200px) {
         & {
             margin-right: 93px;
         }
-    }
-}
-
-/*header site-nav */
-
-.site-nav {
-    margin-bottom: auto;
-    // display: flex;
-    // align-items: center;
-
-    @media screen and (min-width:768px) {
-        justify-content: start;
-        align-items: baseline;
-        margin-right: auto;
     }
 }
