@@ -13,25 +13,42 @@
 <body>
   <header class="page-header">
     <div class="container page-header__block">
-      <nav class="site-nav">
-        <a class="logo site-nav__logo" href="./index.html">
-          <p><span class="logo__span">Web</span>Studio</p>
-        </a>
-        <ul class="menu">
-          <li><a class="menu__link" href="./index.html">Studio</a></li>
-          <li><a class="menu__link--active" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="menu__link" href="./contacts.html">Contacts</a></li>
+      <a class="logo page-header__logo" href="./index.html">
+        <p><span class="logo__span">Web</span>Studio</p>
+      </a>
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <nav class="site-nav">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="./index.html">Studio</a></li>
+            <li class="menu__item"><a class="menu__link--active" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="menu__link" href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contact__item"><a class="contact__link" href="mailto:info@devstudio.com"><svg class="contact__icon"
+                width="14" height="10">
+                <use href="./img//sprite.svg#icon-envelope" />
+              </svg> info@devstudio.com</a></li>
+          <li><a class="contact__link contact__link--tel" href="tel:+420291111111"><svg class="contact__icon" width="10"
+                height="14">
+                <use href="./img/sprite.svg#icon-smartphone" />
+              </svg> +42 029 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li><a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16"
-              height="12">
-              <use href="./img//sprite.svg#icon-envelope" />
-            </svg> info@devstudio.com</a></li>
-        <li><a class="contacts__link" href="tel:+420291111111"><svg class="contacts__icon" width="10" height="16">
-              <use href="./img/sprite.svg#icon-smartphone" />
-            </svg> +42 029 111 11 11</a></li>
-      </ul>
+        <ul class="mobile-soc-list">
+          <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
+          <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
+          <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
+          <li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+      <button class="toggle js-toggle-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="toggle__icons" width="40" height="40">
+          <use class="toggle__icon-menu" href="./img/sprite.svg#icon-menu"></use>
+          <use class="toggle__icon-close" href="./img/sprite.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
 
