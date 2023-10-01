@@ -1,24 +1,31 @@
 .order__form-field,
-.order__field-consent {
+.order__field-consent,
+.order__field-comment {
     position: relative;
     display: block;
 }
 
 .order__form-field {
     margin-bottom: 28px;
+
+
+}
+
+.order__field-comment {
+    height: 120px;
+    margin-bottom: 20px;
 }
 
 .order__label {
     position: absolute;
     left: 0;
-    bottom: 102%;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    bottom: calc(100% + 4px);
+    @include font(.12px, 12px);
 }
 
 .order__input {
     padding-left: 42px;
+    margin: 0;
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -30,9 +37,8 @@
     width: 100%;
     padding: 12px 16px;
     resize: none;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(.14px, 14px);
+    color: rgba(117, 117, 117, 0.5);
     text-align: left;
 
 }
@@ -66,10 +72,23 @@
     height: 18px;
 }
 
+.order__consent-icon {
+    left: 0;
+}
+
 .order__field-consent {
-    @include centeredFlex();
-    padding-left: 36px;
-    margin-bottom: 30px;
+    @include centeredFlex($justifyContent: start);
+    padding-left: 24px;
+    margin-bottom: 20px;
+
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 31px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 30px;
+    }
 }
 
 .order__checkbox {
@@ -91,7 +110,12 @@
 }
 
 .order__consent-text {
+    @include font(.36px, 12px);
     color: getColor('secondary');
+
+    @media screen and (min-width:1200px) {
+        @include font(.42px, 14px);
+    }
 }
 
 .order__link {

@@ -3,15 +3,25 @@
     display: block;
     top: 50%;
     left: 50%;
-    min-width: 528px;
-    min-height: 581px;
+    width: calc(100% - 30px);
+    max-width: 450px;
+    height: 609px;
     transform: translate(-50%, -50%) scale(1);
-    padding: 40px;
+    padding: 40px 40px 50px 40px;
     text-align: center;
     border-radius: 4px;
     background: getColor('light');
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition: transform 250ms $timing-function;
+
+    @media screen and (min-width:768px) {
+        padding: 40px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 528px;
+        height: 581px;
+    }
 
     .overlay.is-hidden & {
         transform: translate(-277%, -97%) scale(.01) rotateZ(-.25turn);
@@ -20,8 +30,9 @@
 
 .close-button {
     position: absolute;
-    top: 14px;
-    right: 14px;
+    top: 8px;
+    right: 8px;
+
     display: flex;
     cursor: pointer;
     width: 30px;
@@ -31,6 +42,11 @@
     border: 1px rgba(0, 0, 0, 0.10) solid;
     border-radius: 50%;
     transition: border-color 250ms $timing-function, transform 250ms $timing-function;
+
+    @media screen and (min-width:1200px) {
+        top: 14px;
+        right: 14px;
+    }
 
     &:hover,
     &:focus {
@@ -56,8 +72,10 @@
 .modal__title {
     display: block;
     text-align: center;
-    font-size: 20px;
-    line-height: 1.17;
-    letter-spacing: 0.6px;
-    margin-bottom: 30px;
+    @include font(.6px, 20px, 1.5);
+    margin-bottom: $prime-gap;
+
+    @media screen and (min-width:1200px) {
+        letter-spacing: .6px;
+    }
 }

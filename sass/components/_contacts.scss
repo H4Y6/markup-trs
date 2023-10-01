@@ -10,12 +10,11 @@
     }
 
     @media screen and (min-width:1200px) {
-
         flex-direction: row;
     }
 }
 
-.contact__item:not(:last-child) {
+.contact__item {
     margin-bottom: 32px;
 
     @media screen and (min-width:768px) {
@@ -24,6 +23,7 @@
 
     @media screen and (min-width:1200px) {
         margin-bottom: 0;
+        margin-right: $prime-gap;
     }
 
 }
@@ -34,6 +34,12 @@
     transition: color 250ms $timing-function;
 
     @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    @media screen and (min-width:1200px) {
         display: flex;
         align-items: center;
         font-size: 14px;

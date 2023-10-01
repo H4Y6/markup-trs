@@ -9,15 +9,19 @@
     @include centeredFlex($alignItems: center, $justifyContent: space-between);
 
     @media screen and (min-width:768px) {
-        @include centeredFlex($alignItems: baseline, $justifyContent: start);
         height: 80px;
+        padding-top: 26px;
+        @include centeredFlex($alignItems: baseline, $justifyContent: start);
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 25px;
     }
 }
 
 .page-header__logo {
     @media screen and (min-width:768px) {
         margin-right: 88px;
-        padding-top: 25px;
     }
 
     @media screen and (min-width:1200px) {
