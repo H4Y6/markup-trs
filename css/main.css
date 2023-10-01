@@ -1139,6 +1139,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .address-part__text,
+  .address__item {
+    margin-bottom: 9px;
+  }
+}
 /* Footer soc part */
 .soc-part {
   margin-bottom: 60px;
