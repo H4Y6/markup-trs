@@ -5,15 +5,26 @@
     background-color: getColor('dark');
 }
 
-.footer__address-part {
-    margin-right: 70px;
-}
-
 .footer__logo {
     color: getColor('light');
     margin-bottom: $secondary-gap;
 }
 
-.footer-soc-part {
-    margin-right: 93px;
+.aligned-text {
+    @include alignedText();
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+    .footer__address-part {
+        margin-right: 70px;
+    }
+
+
+
+    .footer-soc-part {
+        margin-right: 93px;
+    }
 }
