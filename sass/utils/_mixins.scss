@@ -10,6 +10,10 @@
     justify-content: $justifyContent;
 }
 
+@mixin alignedText($align: center) {
+    text-align: $align;
+}
+
 @mixin nColumnList($n, $gap: $prime-gap ) {
     display: flex;
     flex-wrap: wrap;
@@ -21,8 +25,12 @@
 }
 
 @mixin footer-part() {
-    display: inline-flex;
-    flex-direction: column;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        display: inline-flex;
+        flex-direction: column;
+    }
 }
 
 @mixin font($letterSpacing: .48px, $fontSize: 16px, $lineHeight: 1.15, ) {

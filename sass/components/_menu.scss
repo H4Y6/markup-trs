@@ -57,6 +57,7 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    transition: fill 250ms $timing-function;
 
     .mobile-menu.is-open~& {
         position: absolute;

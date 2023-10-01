@@ -1,10 +1,16 @@
 /* Footer form part */
 
-.form-part {
-    @include footer-part();
-    width: calc(100% - 600px);
-}
-
 .form-part__title {
     @extend .soc-part__title
+}
+
+
+
+@media screen and (min-width:1200px) {
+
+    .form-part {
+        @include footer-part();
+        width: calc(100% - 600px);
+    }
+
 }

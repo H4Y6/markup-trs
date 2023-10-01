@@ -352,6 +352,7 @@ img {
     justify-content: space-between;
     padding: 48px 40px;
     transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100vw;
     height: 100vh;
     background-color: #fff;
@@ -485,6 +486,7 @@ img {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu.is-open ~ .toggle {
   position: absolute;
@@ -1069,27 +1071,36 @@ img {
   background-color: #2f303a;
 }
 
-.footer__address-part {
-  margin-right: 70px;
-}
-
 .footer__logo, .soc-part__title, .form-part__title {
   color: #fff;
   margin-bottom: 20px;
 }
 
-.footer-soc-part {
-  margin-right: 93px;
+.aligned-text {
+  text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__address-part {
+    margin-right: 70px;
+  }
+  .footer-soc-part {
+    margin-right: 93px;
+  }
+}
 /* Footer address part */
 .address-part {
-  display: inline-flex;
-  flex-direction: column;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address-part {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 
 .address-part__text {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   color: #fff;
 }
 
@@ -1101,7 +1112,7 @@ img {
 }
 
 .address__item {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .address__link {
@@ -1110,41 +1121,53 @@ img {
 
 /* Footer soc part */
 .soc-part {
-  display: inline-flex;
-  flex-direction: column;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .soc-part {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 
 .soc-part__title, .form-part__title {
   font-weight: 700;
   line-height: 1.15;
-  text-align: left;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 
 /* Footer form part */
-.form-part {
-  display: inline-flex;
-  flex-direction: column;
-  width: calc(100% - 600px);
+@media screen and (min-width: 1200px) {
+  .form-part {
+    margin-bottom: 60px;
+    width: calc(100% - 600px);
+  }
 }
-
-.sign-form {
-  display: flex;
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .form-part {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200) {
+  .sign-form {
+    display: flex;
+  }
 }
 
 .sign__label {
   display: flex;
-  flex-grow: 1;
 }
 
 .sign__input {
   width: 100%;
-  margin-right: 12px;
+  height: 50px;
+  margin-bottom: 20px;
   padding-left: 16px;
+  letter-spacing: 0.48px;
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.48px;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1153,6 +1176,8 @@ img {
 }
 
 .sign__button {
+  display: block;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
