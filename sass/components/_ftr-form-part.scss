@@ -6,9 +6,21 @@
 
 
 
+@media screen and (min-width:768px) {
+
+    .form-part {
+        @include footer-part();
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+}
+
 @media screen and (min-width:1200px) {
 
     .form-part {
+        align-items: start;
         @include footer-part();
         width: calc(100% - 600px);
     }

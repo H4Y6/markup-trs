@@ -1079,10 +1079,25 @@ img {
 .aligned-text {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .aligned-text {
+    text-align: left;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .footer__address-part {
+    margin-right: 22.3577235772%;
+    padding-left: 61px;
+  }
+  .footer__form-part {
+    padding-left: 14px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__address-part {
     margin-right: 70px;
+    padding-left: 0;
   }
   .footer-soc-part {
     margin-right: 93px;
@@ -1092,10 +1107,15 @@ img {
 .address-part {
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .address-part {
     display: inline-flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-part {
+    margin-bottom: 0;
   }
 }
 
@@ -1123,10 +1143,15 @@ img {
 .soc-part {
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .soc-part {
     display: inline-flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .soc-part {
+    margin-bottom: 0;
   }
 }
 
@@ -1138,19 +1163,44 @@ img {
 }
 
 /* Footer form part */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .form-part {
     margin-bottom: 60px;
-    width: calc(100% - 600px);
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 768px) {
   .form-part {
     display: inline-flex;
     flex-direction: column;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .form-part {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-part {
+    align-items: start;
+    margin-bottom: 60px;
+    width: calc(100% - 600px);
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 768px) {
+  .form-part {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .form-part {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
   .sign-form {
     display: flex;
   }
@@ -1173,6 +1223,19 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .sign__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign__input {
+    flex-direction: row;
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
 
 .sign__button {
