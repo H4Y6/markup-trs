@@ -88,8 +88,7 @@
     display: none;
 }
 
-.mobile-menu.is-open .menu,
-.mobile-menu.is-open .contacts {
+.mobile-menu.is-open .menu {
     display: flex;
     flex-direction: column;
 }
