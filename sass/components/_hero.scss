@@ -5,9 +5,9 @@
     background-color: #c4c4c4;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
+            rgba(47, 48, 58, 0.4)), url("../../img/hero/hero-480.jpg");
 
 
     @media screen and (min-width: 768px) {
