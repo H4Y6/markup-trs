@@ -158,17 +158,20 @@
         <h2 class="section__title">What our business's</h2>
         <ul class="deals">
           <li class="deals__item">
-            <img src="./img/devices/desctop.jpg" width="370" height="294" alt="Desctop">
+            <img srcset="./img/devices/desctop.jpg 1x, ./img/devices/desctop@2x.jpg 2x" src="./img/devices/desctop.jpg"
+              width="370" height="294" alt="Desctop">
             <b class="deal__text">Desktop application</b>
           </li>
 
           <li class="deals__item">
-            <img src="./img/devices/notebook.jpg" width="370" height="294" alt="Notebook">
+            <img srcset="./img/devices/notebook.jpg 1x, ./img/devices/notebook@2x.jpg 2x"
+              src="./img/devices/notebook.jpg" width="370" height="294" alt="Notebook">
             <b class="deal__text">Mobile application</b>
           </li>
 
           <li class="deals__item">
-            <img src="./img/devices/tablette.jpg" width="370" height="294" alt="Tablette">
+            <img srcset="./img/devices/tablette.jpg 1x, ./img/devices/tablette@2x.jpg 2x"
+              src="./img/devices/tablette.jpg" width="370" height="294" alt="Tablette">
             <b class="deal__text">designer's decisions</b>
           </li>
         </ul>
@@ -180,8 +183,14 @@
         <h2 class="section__title">Our team</h2>
         <ul class="team-mates">
           <li class="team-mates__item">
-            <img srcset="./img/team/team-1-m.jpg 1x, ./img/team/team-1-m@2x.jpg 2x" src="img/team/team-1-m.jpg"
-              width="450" height="460" alt="Bearded man">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/team/team-1-d.jpg 1x, ./img/team/team-1-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/team/team-1-t.jpg 1x, ./img/team/team-1-t@2x.jpg 2x">
+              <source media="(min-width: 480px)" srcset="./img/team/team-1-m.jpg 1x, ./img/team/team-1-m@2x.jpg 2x">
+              <img src="img/team/team-1-m.jpg" width="450" height="460" alt="Bearded man">
+            </picture>
+
             <div class="team__description">
               <h3 class="team__subtitle">Henry Bergs</h3>
               <p class="section__text">Product Designer</p>
@@ -210,8 +219,14 @@
           </li>
 
           <li class="team-mates__item">
-            <img srcset="./img/team/team-2-m.jpg 1x, ./img/team/team-2-m@2x.jpg 2x" src="img/team/team-2-m.jpg"
-              width="450" height="460" alt="Smiling girl">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/team/team-2-d.jpg 1x, ./img/team/team-2-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/team/team-2-t.jpg 1x, ./img/team/team-2-t@2x.jpg 2x">
+              <source media="(min-width: 480px)" srcset="./img/team/team-2-m.jpg 1x, ./img/team/team-2-m@2x.jpg 2x">
+              <img src="img/team/team-2-m.jpg" width="450" height="460" alt="Smiling girl">
+            </picture>
+
             <div class="team__description">
               <h3 class="team__subtitle">Mia Castoll</h3>
               <p class="section__text">Frontend Developer</p>
@@ -233,8 +248,14 @@
           </li>
 
           <li class="team-mates__item">
-            <img srcset="./img/team/team-3-m.jpg 1x, ./img/team/team-3-m@2x.jpg 2x" src="img/team/team-3-m.jpg"
-              width="450" height="460" alt="Smiling  man">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/team/team-3-d.jpg 1x, ./img/team/team-3-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/team/team-3-t.jpg 1x, ./img/team/team-3-t@2x.jpg 2x">
+              <source media="(min-width: 480px)" srcset="./img/team/team-3-m.jpg 1x, ./img/team/team-3-m@2x.jpg 2x">
+              <img src="img/team/team-3-m.jpg" width="450" height="460" alt="Smiling  man">
+            </picture>
+
             <div class="team__description">
               <h3 class="team__subtitle">Noah Grant</h3>
               <p class="section__text">Marketing</p>
@@ -256,8 +277,14 @@
           </li>
 
           <li class="team-mates__item">
-            <img srcset="./img/team/team-4-m.jpg 1x, ./img/team/team-4-m@2x.jpg 2x" src="img/team/team-4-m.jpg"
-              width="450" height="460" alt="Smiling designer">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/team/team-4-d.jpg 1x, ./img/team/team-4-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/team/team-4-t.jpg 1x, ./img/team/team-4-t@2x.jpg 2x">
+              <source media="(min-width: 480px)" srcset="./img/team/team-4-m.jpg 1x, ./img/team/team-4-m@2x.jpg 2x">
+              <img src="img/team/team-4-m.jpg" width="450" height="460" alt="Smiling designer">
+            </picture>
+
             <div class="team__description">
               <h3 class="team__subtitle">Oliver Stants</h3>
               <p class="section__text">UI Designer</p>
