@@ -44,15 +44,17 @@
 }
 
 .order__form-field:hover>.order__input,
-.order__form-field:hover>.order__comment,
-.order__form-field:focus-within>.order__comment,
+.order__field-comment:hover>.order__comment,
+.order__field-comment:focus-within>.order__comment,
 .order__form-field:focus-within>.order__input {
     outline: none;
     border-color: getColor('accent');
 }
 
 .order__form-field:hover>.order__label,
-.order__form-field:focus-within>.order__label {
+.order__form-field:focus-within>.order__label,
+.order__field-comment:hover>.order__label,
+.order__field-comment:focus-within>.order__label {
     color: getColor('accent');
 }
 
