@@ -56,13 +56,55 @@
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero__title">
-                Smart decisions <br>for your business
-            </h1>
-            <button class="button" type="button" aria-label="order service" data-open-modal>
-                Make an order
-            </button>
+            <div class="container">
+                <h1 class="hero__title">
+                    Clever decisions for your business
+                </h1>
+                <button class="button" type="button" aria-label="order service" data-open-modal>
+                    Make your order
+                </button>
+            </div>
         </section>
+
+        <div class="overlay is-hidden" data-backdrop>
+            <div class="modal">
+                <button title="close button" type="button" class="close-button" data-close-modal>
+                    <svg class="icon-close">
+                        <use href="./img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <b class="modal__title">Let us know your phone and we call you</b>
+                <form class="js-order-form">
+                    <label class="order__form-field"><input type="text" name="name" class="order__input"
+                            autocomplete="name"><span class="order__icon"><svg width="18" height="18">
+                                <use href="./img/sprite.svg#icon-person"></use>
+                            </svg></span><span class="order__label">Name</span></label>
+
+                    <label class="order__form-field"><input type="tel" name="tel" class="order__input"
+                            autocomplete="tel"><span class="order__icon"><svg width="18" height="18">
+                                <use href="./img/sprite.svg#icon-tel"></use>
+                            </svg></span><span class="order__label">Phone</span></label>
+
+                    <label class="order__form-field"><input type="email" name="email" class="order__input"
+                            autocomplete="email"><span class="order__icon"><svg width="18" height="18">
+                                <use href="./img/sprite.svg#icon-email"></use>
+                            </svg></span><span class="order__label">Email</span></label>
+
+                    <label class="order__field-comment"><textarea name="comment" class="order__comment"
+                            placeholder="Type here"></textarea><span class="order__label">Your comment</span></label>
+
+                    <label class="order__field-consent"><input class="order__checkbox" type="checkbox" name="consent">
+                        <span class="order__consent-icon">
+                            <svg width="16" height="15">
+                                <use href="./img/sprite.svg#icon-check"></use>
+                            </svg></span>
+                        <span class="order__consent-text">I would like information and offers <a href=" "
+                                class="order__link">Privacy statement </a> </span>
+                    </label>
+                    <button class="button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
 
         <div class="container">
             <div class="main-box">
@@ -128,45 +170,6 @@
         </div>
     </footer>
 
-    <div class="overlay is-hidden" data-backdrop>
-        <div class="modal">
-            <button title="close button" class="close-button" data-close-modal>
-                <svg class="icon-close">
-                    <use href="./img/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
-            <b class="modal__title">Let us know your phone and we call you</b>
-            <form class="js-order-form">
-                <label class="order__form-field"><input type="text" name="name" class="order__input"
-                        autocomplete="name"><span class="order__icon"><svg width="18" height="18">
-                            <use href="./img/sprite.svg#icon-person"></use>
-                        </svg></span><span class="order__label">Name</span></label>
-
-                <label class="order__form-field"><input type="tel" name="tel" class="order__input"
-                        autocomplete="tel"><span class="order__icon"><svg width="18" height="18">
-                            <use href="./img/sprite.svg#icon-tel"></use>
-                        </svg></span><span class="order__label">Phone</span></label>
-
-                <label class="order__form-field"><input type="email" name="email" class="order__input"
-                        autocomplete="email"><span class="order__icon"><svg width="18" height="18">
-                            <use href="./img/sprite.svg#icon-email"></use>
-                        </svg></span><span class="order__label">Email</span></label>
-
-                <label class="order__field-comment"><textarea name="comment" class="order__comment"
-                        placeholder="Type here"></textarea><span class="order__label">Your comment</span></label>
-
-                <label class="order__field-consent"><input class="order__checkbox" type="checkbox" name="consent">
-                    <span class="order__consent-icon">
-                        <svg width="16" height="15">
-                            <use href="./img/sprite.svg#icon-check"></use>
-                        </svg></span>
-                    <span class="order__consent-text">I would like information and offers <a href=" "
-                            class="order__link">Privacy statement </a> </span>
-                </label>
-                <button class="button" type="submit">Send</button>
-            </form>
-        </div>
-    </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
