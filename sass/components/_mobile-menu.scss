@@ -38,6 +38,8 @@
 
         .mobile-menu.is-open & {
             display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             @include list();
         }
     }
@@ -45,11 +47,10 @@
     .mobile-soc__item {
         &+& {
             position: relative;
-            margin-left: 20px;
 
             &::before {
                 position: absolute;
-                left: -10px;
+                left: -5px;
                 top: 0;
                 content: "";
                 display: block;
